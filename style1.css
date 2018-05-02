@@ -1,0 +1,126 @@
+body {
+  background-color: #3498DB;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* box for entire calculator - needed to position the content */
+
+#box {
+  text-align: center;
+}
+
+/* calculator form */
+
+#cal {
+  background-color: AliceBlue;
+  display: inline-block;
+  padding: 7px;
+}
+
+/* clear button */
+
+#btn1 {
+  background-color: #681c1c;
+  border: none;
+  color: white;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* result display */
+
+#disp1 {
+  text-align: right;
+  border-style: solid;
+  border-color: #1c3968;
+  color: black;
+  background-color: white;
+  font-size: 40px;
+  width: 205px;
+  height: 55px;
+}
+
+/* error display */
+
+#disp2 {
+  text-align: center;
+  border: 2px;
+  border-style: solid;
+  border-color: #1c3968;
+  font-weight: bold;
+  color: red;
+  background-color: white;
+  font-size: 20px;
+  width: 275px;
+  margin: 5px;
+  height: 55px;
+}
+
+/* all buttons of calculator accept C */
+
+.btn {
+  border: none;
+  color: white;
+  background-color: #1c3968;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* dropdown button */
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/* the container <div> - needed to position the dropdown content */
+
+.dropdown {
+  display: inline-block;
+}
+
+/* dropdown content (hidden by default) */
+
+.dropdown-content {
+  display: none;
+  background-color: white;
+}
+
+/* buttons inside the dropdown */
+
+.b {
+  width: 100%;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* change color of dropdown buttons on hover */
+
+.b:hover {
+  background-color: #ddd;
+}
+
+/* show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
