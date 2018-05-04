@@ -11,6 +11,7 @@ h1 {
 
 #box {
   text-align: center;
+  margin-bottom: 200px;
 }
 
 /* calculator form */
@@ -27,7 +28,7 @@ h1 {
   background-color: #681c1c;
   border: none;
   color: white;
-  font-size: 40px;
+  font-size: 52px;
   width: 60px;
   height: 60px;
   margin: 5px;
@@ -69,7 +70,7 @@ h1 {
   border: none;
   color: AliceBlue;
   background-color: #1c3968;
-  font-size: 40px;
+  font-size: 52px;
   width: 60px;
   height: 60px;
   margin: 5px;
@@ -79,7 +80,7 @@ h1 {
 /* dropdown button */
 
 .dropbtn {
-  background-color: black;
+  background-color: #1c3968;
   color: white;
   font-weight: bold;
   margin-top: 25px;
@@ -117,7 +118,8 @@ h1 {
 /* change color of dropdown buttons on hover */
 
 .b:hover {
-  background-color: #ddd;
+  background-color: #1c3968;
+  color: white;
 }
 
 /* show the dropdown menu on hover */
