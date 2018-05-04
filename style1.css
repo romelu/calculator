@@ -4,7 +4,7 @@ body {
 
 h1 {
   text-align: center;
-  color: white;
+  color: AliceBlue;
 }
 
 /* box for entire calculator - needed to position the content */
@@ -16,7 +16,7 @@ h1 {
 /* calculator form */
 
 #cal {
-  background-color: AliceBlue;
+  background-color: #1c3968;
   display: inline-block;
   padding: 7px;
 }
@@ -41,7 +41,7 @@ h1 {
   border-style: solid;
   border-color: #1c3968;
   color: black;
-  background-color: white;
+  background-color: AliceBlue;
   font-size: 40px;
   width: 205px;
   height: 55px;
@@ -56,7 +56,7 @@ h1 {
   border-color: #1c3968;
   font-weight: bold;
   color: red;
-  background-color: white;
+  background-color: AliceBlue;
   font-size: 20px;
   width: 275px;
   margin: 5px;
@@ -67,7 +67,7 @@ h1 {
 
 .btn {
   border: none;
-  color: white;
+  color: AliceBlue;
   background-color: #1c3968;
   font-size: 40px;
   width: 60px;
@@ -79,8 +79,9 @@ h1 {
 /* dropdown button */
 
 .dropbtn {
-  background-color: #3498DB;
+  background-color: black;
   color: white;
+  font-weight: bold;
   margin-top: 25px;
   padding: 5px;
   font-size: 20px;
@@ -97,7 +98,6 @@ h1 {
 
 .dropdown-content {
   display: none;
-  background-color: white;
 }
 
 /* buttons inside the dropdown */
@@ -109,6 +109,7 @@ h1 {
   color: black;
   padding: 5px;
   text-decoration: none;
+  font-weight: bold;
   display: block;
   cursor: pointer;
 }
