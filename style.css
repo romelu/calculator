@@ -92,14 +92,12 @@
 
    .dropdown {
      display: inline-block;
-     position: relative;
    }
 
    /* dropdown content (hidden by default) */
 
    .dropdown-content {
      display: none;
-     position: absolute;
    }
 
    /* buttons inside the dropdown */
