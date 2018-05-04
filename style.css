@@ -11,6 +11,7 @@
 
    #box {
      text-align: center;
+     margin-bottom: 200px;
    }
 
    /* calculator form */
@@ -59,8 +60,8 @@
      background-color: white;
      font-size: 20px;
      width: 275px;
-     margin: 5px;
      height: 55px;
+     margin: 5px;
    }
 
    /* all buttons of calculator accept C */
@@ -117,7 +118,8 @@
    /* change color of dropdown buttons on hover */
 
    .b:hover {
-     background-color: #ddd;
+     background-color: #3498DB;
+     color: white;
    }
 
    /* show the dropdown menu on hover */
