@@ -97,7 +97,7 @@ h1 {
 /* dropdown content (hidden by default) */
 
 .dropdown-content {
-  display: block;
+  display: none;
 }
 
 /* buttons inside the dropdown */
