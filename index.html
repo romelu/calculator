@@ -6,8 +6,7 @@
 <head>
   <script src="script.js"></script>
   <script src="script1.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href=".css">
+  <link rel="stylesheet" id="pagestyle" type="text/css" href="style.css">
   <title>Calculator</title>
 </head>
 
@@ -50,12 +49,12 @@
       </table>
     </form>
   </div>
-  <div clas="dropdown">
+  <div class="dropdown">
     <button class="dropbtn">Color</button>
     <div class="dropdown-content">
-      <button type="button" class="b" onclick="">Default</button>
-      <button type="button" class="b" onclick="">Sky</button>
-      <button type="button" class="b" onclick="">Sand</button>
+      <button type="button" class="b" onclick="swapCss('style.css')">Default</button>
+      <button type="button" class="b" onclick="swapCss('style1.css')">Sky</button>
+      <button type="button" class="b" onclick="swapCss('style2.css')">Sand</button>
     </div>
   </div>
 </body>
