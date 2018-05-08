@@ -19,7 +19,7 @@
    #cal {
      background-color: AliceBlue;
      display: inline-block;
-     padding: 7px;
+     padding: 2px;
    }
 
    /* clear button */
@@ -31,7 +31,6 @@
      font-size: 40px;
      width: 60px;
      height: 60px;
-     margin: 5px;
      cursor: pointer;
    }
 
@@ -44,7 +43,7 @@
      color: black;
      background-color: white;
      font-size: 40px;
-     width: 205px;
+     width: 186px;
      height: 55px;
    }
 
@@ -52,16 +51,16 @@
 
    #disp2 {
      text-align: center;
-     border: 2px;
      border-style: solid;
      border-color: #1c3968;
+     border-width: 2px;
      font-weight: bold;
      color: red;
      background-color: white;
-     font-size: 20px;
-     width: 275px;
-     height: 55px;
-     margin: 5px;
+     font-size: 18px;
+     width: 245px;
+     height: 52px;
+     padding: 5px;
    }
 
    /* all buttons of calculator accept C */
@@ -73,14 +72,13 @@
      font-size: 40px;
      width: 60px;
      height: 60px;
-     margin: 5px;
      cursor: pointer;
    }
 
    /* dropdown button */
 
    .dropbtn {
-     background-color: #3498DB;
+     background-color: #1c3968;
      color: white;
      font-weight: bold;
      margin-top: 25px;
@@ -118,7 +116,7 @@
    /* change color of dropdown buttons on hover */
 
    .b:hover {
-     background-color: #3498DB;
+     background-color: #1c3968;
      color: white;
    }
 
