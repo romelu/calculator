@@ -50,6 +50,7 @@
    /* error display */
 
    #disp2 {
+     display: block;
      text-align: center;
      border-style: solid;
      border-color: #1c3968;
@@ -58,9 +59,8 @@
      color: red;
      background-color: white;
      font-size: 18px;
-     width: 245px;
-     height: 52px;
-     padding: 5px;
+     width: 250px;
+     height: 55px;
    }
 
    /* all buttons of calculator accept C */
