@@ -1,6 +1,6 @@
 var flag = false;
 
-// displays numerous inputs on the screen
+// displays numerous inputs (numbers) on the screen
 function displaynumber(n1) {
   calculator.display.value = calculator.display.value + n1;
 }
