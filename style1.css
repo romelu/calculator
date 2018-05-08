@@ -19,7 +19,7 @@ h1 {
 #cal {
   background-color: #1c3968;
   display: inline-block;
-  padding: 7px;
+  padding: 2px;
 }
 
 /* clear button */
@@ -28,10 +28,9 @@ h1 {
   background-color: #681c1c;
   border: none;
   color: white;
-  font-size: 52px;
+  font-size: 40px;
   width: 60px;
   height: 60px;
-  margin: 5px;
   cursor: pointer;
 }
 
@@ -39,29 +38,26 @@ h1 {
 
 #disp1 {
   text-align: right;
-  border-style: solid;
-  border-color: #1c3968;
+  border: none;
   color: black;
   background-color: AliceBlue;
   font-size: 40px;
-  width: 205px;
+  width: 187px;
   height: 55px;
 }
 
 /* error display */
 
 #disp2 {
+  border: none;
   text-align: center;
-  border: 2px;
-  border-style: solid;
-  border-color: #1c3968;
   font-weight: bold;
   color: red;
   background-color: AliceBlue;
-  font-size: 20px;
-  width: 275px;
-  margin: 5px;
-  height: 55px;
+  font-size: 18px;
+  width: 244px;
+  height: 52px;
+  padding: 5px;
 }
 
 /* all buttons of calculator accept C */
@@ -69,11 +65,10 @@ h1 {
 .btn {
   border: none;
   color: AliceBlue;
-  background-color: #1c3968;
-  font-size: 52px;
+  background-color: #555d75;
+  font-size: 40px;
   width: 60px;
   height: 60px;
-  margin: 5px;
   cursor: pointer;
 }
 
