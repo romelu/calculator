@@ -49,15 +49,15 @@ h1 {
 /* error display */
 
 #disp2 {
+  display: block;
   border: none;
   text-align: center;
   font-weight: bold;
   color: red;
   background-color: white;
   font-size: 18px;
-  width: 244px;
-  height: 52px;
-  padding: 5px;
+  width: 250px;
+  height: 55px;
 }
 
 /* all buttons of calculator accept C */
