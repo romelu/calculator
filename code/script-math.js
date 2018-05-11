@@ -1,4 +1,4 @@
-var flag = false;
+var divisionPerformed = false;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
@@ -7,7 +7,7 @@ function displayNumber(inputValue) {
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
-  if (flag == true && inputValue == 0) {
+  if (divisionPerformed == true && inputValue == 0) {
     var b = document.getElementsByClassName("btn");
     for (var i = 0; i < b.length; i++) {
       b[i].disabled = true;
@@ -15,18 +15,18 @@ function testZero(inputValue) {
       document.getElementById("disp2").value = "Can not devide by 0! Click C";
     }
   } else {
-    flag = false;
+    divisionPerformed = false;
   }
 }
 
 // sets warning, division is in play, boolean used
 function setWarning() {
-  flag = true;
+  divisionPerformed = true;
 }
 
 // clears both displays, resets boolean, enables buttons
 function clearDisplay() {
-  flag = false;
+  divisionPerformed = false;
   document.getElementById("disp1").value = "";
   document.getElementById("disp2").value = "";
   var b = document.getElementsByClassName("btn");
