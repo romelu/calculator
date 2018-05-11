@@ -1,13 +1,13 @@
 var flag = false;
 
 // displays numerous inputs (numbers) on the screen
-function displayNumber(n1) {
-  calculator.display.value = calculator.display.value + n1;
+function displayNumber(inputValue) {
+  calculator.display.value = calculator.display.value + inputValue;
 }
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
-function testZero(n2) {
-  if (flag == true && n2 == 0) {
+function testZero(inputValue) {
+  if (flag == true && inputValue == 0) {
     var b = document.getElementsByClassName("btn");
     for (var i = 0; i < b.length; i++) {
       b[i].disabled = true;
@@ -36,7 +36,7 @@ function clearDisplay() {
   }
 }
 
-function equal() {
+function result() {
   var e = calculator.display.value;
   var b = document.getElementsByClassName("btn");
   for (var i = 0; i < b.length; i++) {
