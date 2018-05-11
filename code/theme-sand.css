@@ -9,14 +9,14 @@ h1 {
 
 /* box for entire calculator - needed to position the content */
 
-#box {
+#id-container {
   text-align: center;
   margin-bottom: 200px;
 }
 
 /* calculator form */
 
-#cal {
+#id-calculator {
   background-color: #474024;
   display: inline-block;
   padding: 2px;
@@ -24,7 +24,7 @@ h1 {
 
 /* clear button */
 
-#btn1 {
+#id-buttonClear {
   background-color: #681c1c;
   border: none;
   color: white;
@@ -36,7 +36,7 @@ h1 {
 
 /* result display */
 
-#disp1 {
+#id-displayMain {
   text-align: right;
   border: none;
   color: black;
@@ -48,7 +48,7 @@ h1 {
 
 /* error display */
 
-#disp2 {
+#id-displayInfo {
   display: block;
   border: none;
   text-align: center;
@@ -62,7 +62,7 @@ h1 {
 
 /* all buttons of calculator accept C */
 
-.btn {
+.rcalc-button {
   border: none;
   color: white;
   background-color: #727555;
@@ -73,9 +73,15 @@ h1 {
   cursor: pointer;
 }
 
+/* the container <div> - needed to position the dropdown content */
+
+.rcalc-dropdown {
+  display: inline-block;
+}
+
 /* dropdown button */
 
-.dropButton {
+.rcalc-dropdown-button {
   background-color: #474024;
   color: white;
   font-weight: bold;
@@ -85,21 +91,15 @@ h1 {
   border: none;
 }
 
-/* the container <div> - needed to position the dropdown content */
-
-.dropdown {
-  display: inline-block;
-}
-
 /* dropdown content (hidden by default) */
 
-.dropdownContent {
+.rcalc-dropdown-content {
   display: none;
 }
 
 /* buttons inside the dropdown */
 
-.b {
+.rcalc-button-css-swap {
   width: 100%;
   background-color: white;
   border: none;
@@ -113,13 +113,13 @@ h1 {
 
 /* change color of dropdown buttons on hover */
 
-.b:hover {
+.rcalc-button-css-swap:hover {
   background-color: #474024;
   color: white;
 }
 
 /* show the dropdown menu on hover */
 
-.dropdown:hover .dropdownContent {
+.rcalc-dropdown:hover .rcalc-dropdown-content {
   display: block;
 }

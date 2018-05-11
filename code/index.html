@@ -4,57 +4,57 @@
 <meta name="viewport" content="width=device-width , initial-scale=1">
 
 <head>
-  <script src="script.js"></script>
-  <script src="script1.js"></script>
+  <script src="script-math.js"></script>
+  <script src="script-else.js"></script>
   <link rel="stylesheet" id="pagestyle" type="text/css" href="theme-default.css">
   <title>Calculator</title>
 </head>
 
 <body>
   <h1>Calculator by Roman</h1>
-  <div id="box">
-    <form name="calculator" id="cal">
+  <div id="id-container">
+    <form name="nameCalculator" id="id-calculator">
       <table>
         <tr>
-          <td colspan="3"><input type="text" name="display" id="disp1" maxlength="1000" disabled></td>
-          <td><input type="button" id="btn1" name="clear" value="C" onclick="clearDisplay();"></td>
+          <td colspan="3"><input type="text" name="nameDisplayMain" id="id-displayMain" maxlength="1000" disabled></td>
+          <td><input type="button" name="nameButtonClear" id="id-buttonClear" value="C" onclick="clearDisplay();"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="seven" value="7" onclick="testZero(seven.value);displayNumber(seven.value);"></td>
-          <td><input type="button" class="btn" name="eight" value="8" onclick="testZero(eight.value);displayNumber(eight.value);"></td>
-          <td><input type="button" class="btn" name="nine" value="9" onclick="testZero(nine.value);displayNumber(nine.value);"></td>
-          <td><input type="button" class="btn" name="division" style="background-color: #39681c" value="/" onclick="setWarning();displayNumber(division.value);"></td>
+          <td><input type="button" name="nameSeven" class="rcalc-button" value="7" onclick="testZero(nameSeven.value);displayNumber(nameSeven.value);"></td>
+          <td><input type="button" name="nameEight" class="rcalc-button" value="8" onclick="testZero(nameEight.value);displayNumber(nameEight.value);"></td>
+          <td><input type="button" name="nameNine" class="rcalc-button" value="9" onclick="testZero(nameNine.value);displayNumber(nameNine.value);"></td>
+          <td><input type="button" name="nameDivision" class="rcalc-button" value="/" style="background-color: #39681c" onclick="setWarning();displayNumber(nameDivision.value);"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="four" value="4" onclick="testZero(four.value);displayNumber(four.value);"></td>
-          <td><input type="button" class="btn" name="five" value="5" onclick="testZero(five.value);displayNumber(five.value);"></td>
-          <td><input type="button" class="btn" name="six" value="6" onclick="testZero(six.value);displayNumber(six.value);"></td>
-          <td><input type="button" class="btn" name="multiplication" style="background-color: #39681c" value="*" onclick="displayNumber(multiplication.value);"></td>
+          <td><input type="button" name="nameFour" class="rcalc-button" value="4" onclick="testZero(nameFour.value);displayNumber(nameFour.value);"></td>
+          <td><input type="button" name="nameFive" class="rcalc-button" value="5" onclick="testZero(nameFive.value);displayNumber(nameFive.value);"></td>
+          <td><input type="button" name="nameSix" class="rcalc-button" value="6" onclick="testZero(nameSix.value);displayNumber(nameSix.value);"></td>
+          <td><input type="button" name="nameMultiplication" class="rcalc-button" value="*" style="background-color: #39681c" onclick="displayNumber(nameMultiplication.value);"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="one" value="1" onclick="testZero(one.value);displayNumber(one.value);"></td>
-          <td><input type="button" class="btn" name="two" value="2" onclick="testZero(two.value);displayNumber(two.value);"></td>
-          <td><input type="button" class="btn" name="three" value="3" onclick="testZero(three.value);displayNumber(three.value);"></td>
-          <td><input type="button" class="btn" name="subtraction" style="background-color: #39681c" value="-" onclick="displayNumber(subtraction.value);"></td>
+          <td><input type="button" name="nameOne" class="rcalc-button" value="1" onclick="testZero(nameOne.value);displayNumber(nameOne.value);"></td>
+          <td><input type="button" name="nameTwo" class="rcalc-button" value="2" onclick="testZero(nameTwo.value);displayNumber(nameTwo.value);"></td>
+          <td><input type="button" name="nameThree" class="rcalc-button" value="3" onclick="testZero(nameThree.value);displayNumber(nameThree.value);"></td>
+          <td><input type="button" name="nameSubtraction" class="rcalc-button" value="-" style="background-color: #39681c" onclick="displayNumber(nameSubtraction.value);"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="dot" value="." onclick="displayNumber(dot.value);"></td>
-          <td><input type="button" class="btn" name="zero" value="0" onclick="testZero(zero.value);displayNumber(zero.value);"></td>
-          <td><input type="button" class="btn" name="equal" value="=" onclick="result();"></td>
-          <td><input type="button" class="btn" name="addition" style="background-color: #39681c" value="+" onclick="displayNumber(addition.value);"></td>
+          <td><input type="button" name="nameDot" class="rcalc-button" value="." onclick="displayNumber(nameDot.value);"></td>
+          <td><input type="button" name="nameZero" class="rcalc-button" value="0" onclick="testZero(nameZero.value);displayNumber(nameZero.value);"></td>
+          <td><input type="button" name="nameEqual" class="rcalc-button" value="=" onclick="result();"></td>
+          <td><input type="button" name="nameAddition" class="rcalc-button" value="+" style="background-color: #39681c" onclick="displayNumber(nameAddition.value);"></td>
         </tr>
         <tr>
-          <td colspan="4"><textarea name="display1" rows="2" id="disp2" disabled></textarea></td>
+          <td colspan="4"><textarea name="nameDisplayInfo" id="id-displayInfo" rows="2" disabled></textarea></td>
         </tr>
       </table>
     </form>
     <br>
-    <div class="dropdown">
-      <button class="dropButton">Color</button>
-      <div class="dropdownContent">
-        <button type="button" class="b" onclick="swapCssFile('theme-default.css')">Default theme</button>
-        <button type="button" class="b" onclick="swapCssFile('theme-sky.css')">Sky theme</button>
-        <button type="button" class="b" onclick="swapCssFile('theme-sand.css')">Sand theme</button>
+    <div class="rcalc-dropdown">
+      <button class="rcalc-dropdown-button">Color</button>
+      <div class="rcalc-dropdown-content">
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('theme-default.css')">Default theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('theme-sky.css')">Sky theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('theme-sand.css')">Sand theme</button>
       </div>
     </div>
   </div>
