@@ -77,7 +77,7 @@
 
    /* dropdown button */
 
-   .dropbtn {
+   .dropButton {
      background-color: #1c3968;
      color: white;
      font-weight: bold;
@@ -95,7 +95,7 @@
 
    /* dropdown content (hidden by default) */
 
-   .dropdown-content {
+   .dropdownContent {
      display: none;
    }
 
@@ -122,6 +122,6 @@
 
    /* show the dropdown menu on hover */
 
-   .dropdown:hover .dropdown-content {
+   .dropdown:hover .dropdownContent {
      display: block;
    }
