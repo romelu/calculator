@@ -17,31 +17,31 @@
       <table>
         <tr>
           <td colspan="3"><input type="text" name="display" id="disp1" maxlength="1000" disabled></td>
-          <td><input type="button" id="btn1" name="clear" value="C" onclick="cl();"></td>
+          <td><input type="button" id="btn1" name="clear" value="C" onclick="clearDisplay();"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="seven" value="7" onclick="testZero(seven.value);displaynumber(seven.value);"></td>
-          <td><input type="button" class="btn" name="eight" value="8" onclick="testZero(eight.value);displaynumber(eight.value);"></td>
-          <td><input type="button" class="btn" name="nine" value="9" onclick="testZero(nine.value);displaynumber(nine.value);"></td>
-          <td><input type="button" class="btn" name="division" style="background-color: #39681c" value="/" onclick="setWarning();displaynumber(division.value);"></td>
+          <td><input type="button" class="btn" name="seven" value="7" onclick="testZero(seven.value);displayNumber(seven.value);"></td>
+          <td><input type="button" class="btn" name="eight" value="8" onclick="testZero(eight.value);displayNumber(eight.value);"></td>
+          <td><input type="button" class="btn" name="nine" value="9" onclick="testZero(nine.value);displayNumber(nine.value);"></td>
+          <td><input type="button" class="btn" name="division" style="background-color: #39681c" value="/" onclick="setWarning();displayNumber(division.value);"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="four" value="4" onclick="testZero(four.value);displaynumber(four.value);"></td>
-          <td><input type="button" class="btn" name="five" value="5" onclick="testZero(five.value);displaynumber(five.value);"></td>
-          <td><input type="button" class="btn" name="six" value="6" onclick="testZero(six.value);displaynumber(six.value);"></td>
-          <td><input type="button" class="btn" name="multiplication" style="background-color: #39681c" value="*" onclick="displaynumber(multiplication.value);"></td>
+          <td><input type="button" class="btn" name="four" value="4" onclick="testZero(four.value);displayNumber(four.value);"></td>
+          <td><input type="button" class="btn" name="five" value="5" onclick="testZero(five.value);displayNumber(five.value);"></td>
+          <td><input type="button" class="btn" name="six" value="6" onclick="testZero(six.value);displayNumber(six.value);"></td>
+          <td><input type="button" class="btn" name="multiplication" style="background-color: #39681c" value="*" onclick="displayNumber(multiplication.value);"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="one" value="1" onclick="testZero(one.value);displaynumber(one.value);"></td>
-          <td><input type="button" class="btn" name="two" value="2" onclick="testZero(two.value);displaynumber(two.value);"></td>
-          <td><input type="button" class="btn" name="three" value="3" onclick="testZero(three.value);displaynumber(three.value);"></td>
-          <td><input type="button" class="btn" name="subtraction" style="background-color: #39681c" value="-" onclick="displaynumber(subtraction.value);"></td>
+          <td><input type="button" class="btn" name="one" value="1" onclick="testZero(one.value);displayNumber(one.value);"></td>
+          <td><input type="button" class="btn" name="two" value="2" onclick="testZero(two.value);displayNumber(two.value);"></td>
+          <td><input type="button" class="btn" name="three" value="3" onclick="testZero(three.value);displayNumber(three.value);"></td>
+          <td><input type="button" class="btn" name="subtraction" style="background-color: #39681c" value="-" onclick="displayNumber(subtraction.value);"></td>
         </tr>
         <tr>
-          <td><input type="button" class="btn" name="dot" value="." onclick="displaynumber(dot.value);"></td>
-          <td><input type="button" class="btn" name="zero" value="0" onclick="testZero(zero.value);displaynumber(zero.value);"></td>
-          <td><input type="button" class="btn" name="equal" value="=" onclick="eq();"></td>
-          <td><input type="button" class="btn" name="addition" style="background-color: #39681c" value="+" onclick="displaynumber(addition.value);"></td>
+          <td><input type="button" class="btn" name="dot" value="." onclick="displayNumber(dot.value);"></td>
+          <td><input type="button" class="btn" name="zero" value="0" onclick="testZero(zero.value);displayNumber(zero.value);"></td>
+          <td><input type="button" class="btn" name="equal" value="=" onclick="equal();"></td>
+          <td><input type="button" class="btn" name="addition" style="background-color: #39681c" value="+" onclick="displayNumber(addition.value);"></td>
         </tr>
         <tr>
           <td colspan="4"><textarea name="display1" rows="2" id="disp2" disabled></textarea></td>
@@ -50,11 +50,11 @@
     </form>
     <br>
     <div class="dropdown">
-      <button class="dropbtn">Color</button>
-      <div class="dropdown-content">
-        <button type="button" class="b" onclick="swapCss('style.css')">Default theme</button>
-        <button type="button" class="b" onclick="swapCss('style1.css')">Sky theme</button>
-        <button type="button" class="b" onclick="swapCss('style2.css')">Sand theme</button>
+      <button class="dropButton">Color</button>
+      <div class="dropdownContent">
+        <button type="button" class="b" onclick="swapCssFile('style.css')">Default theme</button>
+        <button type="button" class="b" onclick="swapCssFile('style1.css')">Sky theme</button>
+        <button type="button" class="b" onclick="swapCssFile('style2.css')">Sand theme</button>
       </div>
     </div>
   </div>
