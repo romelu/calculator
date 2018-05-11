@@ -1,7 +1,7 @@
 var flag = false;
 
 // displays numerous inputs (numbers) on the screen
-function displaynumber(n1) {
+function displayNumber(n1) {
   calculator.display.value = calculator.display.value + n1;
 }
 
@@ -25,7 +25,7 @@ function setWarning() {
 }
 
 // clears both displays, resets boolean, enables buttons
-function cl() {
+function clearDisplay() {
   flag = false;
   document.getElementById("disp1").value = "";
   document.getElementById("disp2").value = "";
@@ -36,7 +36,7 @@ function cl() {
   }
 }
 
-function eq() {
+function equal() {
   var e = calculator.display.value;
   var b = document.getElementsByClassName("btn");
   for (var i = 0; i < b.length; i++) {
