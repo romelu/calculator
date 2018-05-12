@@ -6,7 +6,7 @@
 <head>
   <script src="script-math.js"></script>
   <script src="script-else.js"></script>
-  <link rel="stylesheet" id="pagestyle" type="text/css" href="theme-default.css">
+  <link rel="stylesheet" id="id-page-style" type="text/css" href="theme-default.css">
   <title>Calculator</title>
 </head>
 
@@ -16,8 +16,8 @@
     <form name="nameCalculator" id="id-calculator">
       <table>
         <tr>
-          <td colspan="3"><input type="text" name="nameDisplayMain" id="id-displayMain" maxlength="1000" disabled></td>
-          <td><input type="button" name="nameButtonClear" id="id-buttonClear" value="C" onclick="clearDisplay();"></td>
+          <td colspan="3"><input type="text" name="nameDisplayMain" id="id-display-main" maxlength="1000" disabled></td>
+          <td><input type="button" name="nameButtonClear" id="id-button-clear" value="C" onclick="clearDisplay();"></td>
         </tr>
         <tr>
           <td><input type="button" name="nameSeven" class="rcalc-button" value="7" onclick="testZero(nameSeven.value);displayNumber(nameSeven.value);"></td>
@@ -44,7 +44,7 @@
           <td><input type="button" name="nameAddition" class="rcalc-button" value="+" style="background-color: #39681c" onclick="displayNumber(nameAddition.value);"></td>
         </tr>
         <tr>
-          <td colspan="4"><textarea name="nameDisplayInfo" id="id-displayInfo" rows="2" disabled></textarea></td>
+          <td colspan="4"><textarea name="nameDisplayInfo" id="id-display-info" rows="2" disabled></textarea></td>
         </tr>
       </table>
     </form>

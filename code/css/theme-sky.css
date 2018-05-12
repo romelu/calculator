@@ -1,0 +1,124 @@
+body {
+  background-color: #3498DB;
+}
+
+h1 {
+  text-align: center;
+  color: AliceBlue;
+}
+
+/* box for entire calculator - needed to position the content */
+
+#id-container {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+/* calculator form */
+
+#id-calculator {
+  background-color: #1c3968;
+  display: inline-block;
+  padding: 2px;
+}
+
+/* clear button */
+
+#id-button-clear {
+  background-color: #681c1c;
+  border: none;
+  color: white;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* result display */
+
+#id-display-main {
+  text-align: right;
+  border: none;
+  color: black;
+  background-color: AliceBlue;
+  font-size: 40px;
+  width: 187px;
+  height: 55px;
+}
+
+/* error display */
+
+#id-display-info {
+  display: block;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  background-color: AliceBlue;
+  font-size: 18px;
+  width: 250px;
+  height: 55px;
+}
+
+/* all buttons of calculator accept C */
+
+.rcalc-button {
+  border: none;
+  color: AliceBlue;
+  background-color: #555d75;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* dropdown button */
+
+.rcalc-dropdown-button {
+  background-color: #1c3968;
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/* the container <div> - needed to position the dropdown content */
+
+.rcalc-dropdown {
+  display: inline-block;
+}
+
+/* dropdown content (hidden by default) */
+
+.rcalc-dropdown-content {
+  display: none;
+}
+
+/* buttons inside the dropdown */
+
+.rcalc-button-css-swap {
+  width: 100%;
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+/* change color of dropdown buttons on hover */
+
+.rcalc-button-css-swap:hover {
+  background-color: #1c3968;
+  color: white;
+}
+
+/* show the dropdown menu on hover */
+
+.rcalc-dropdown:hover .rcalc-dropdown-content {
+  display: block;
+}
