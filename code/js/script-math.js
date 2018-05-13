@@ -8,10 +8,10 @@ function displayNumber(inputValue) {
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == 0) {
-    var b = document.getElementsByClassName("rcalc-button");
-    for (var i = 0; i < b.length; i++) {
-      b[i].disabled = true;
-      b[i].style.color = "black";
+    var buttonDisable = document.getElementsByClassName("rcalc-button");
+    for (var i = 0; i < buttonDisable.length; i++) {
+      buttonDisable[i].disabled = true;
+      buttonDisable[i].style.color = "black";
       document.getElementById("id-display-info").value = "Can not devide by 0! Click C";
     }
   } else {
@@ -29,27 +29,27 @@ function clearDisplay() {
   isDivisionPerformed = false;
   document.getElementById("id-display-main").value = "";
   document.getElementById("id-display-info").value = "";
-  var b = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < b.length; i++) {
-    b[i].disabled = false;
-    b[i].style.color = "white";
+  var buttonEnable = document.getElementsByClassName("rcalc-button");
+  for (var i = 0; i < buttonEnable.length; i++) {
+    buttonEnable[i].disabled = false;
+    buttonEnable[i].style.color = "white";
   }
 }
 
 function result() {
-  var e = nameCalculator.nameDisplayMain.value;
-  var b = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < b.length; i++) {
-    b[i].disabled = true;
-    b[i].style.color = "black";
+  var displayValue = nameCalculator.nameDisplayMain.value;
+  var buttonDisable = document.getElementsByClassName("rcalc-button");
+  for (var i = 0; i < buttonDisable.length; i++) {
+    buttonDisable[i].disabled = true;
+    buttonDisable[i].style.color = "black";
   }
   document.getElementById("id-display-info").value = "   Invalid entry!    Click C";
-  if (e) {
-    nameCalculator.nameDisplayMain.value = eval(e);
-    var b = document.getElementsByClassName("rcalc-button");
-    for (var i = 0; i < b.length; i++) {
-      b[i].disabled = false;
-      b[i].style.color = "white";
+  if (displayValue) {
+    nameCalculator.nameDisplayMain.value = eval(displayValue);
+    var buttonEnable = document.getElementsByClassName("rcalc-button");
+    for (var i = 0; i < buttonEnable.length; i++) {
+      buttonEnable[i].disabled = false;
+      buttonEnable[i].style.color = "white";
     }
     document.getElementById("id-display-info").value = "";
   }

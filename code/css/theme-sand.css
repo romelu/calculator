@@ -9,14 +9,14 @@ h1 {
 
 /* box for entire calculator - needed to position the content */
 
-#id-container {
+.rcalc-container {
   text-align: center;
   margin-bottom: 200px;
 }
 
 /* calculator form */
 
-#id-calculator {
+.rcalc-calculator {
   background-color: #474024;
   display: inline-block;
   padding: 2px;
@@ -24,7 +24,7 @@ h1 {
 
 /* clear button */
 
-#id-button-clear {
+.rcalc-button-clear {
   background-color: #681c1c;
   border: none;
   color: white;

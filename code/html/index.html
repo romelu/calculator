@@ -4,20 +4,20 @@
 <meta name="viewport" content="width=device-width , initial-scale=1">
 
 <head>
-  <script src="script-math.js"></script>
-  <script src="script-else.js"></script>
-  <link rel="stylesheet" id="id-page-style" type="text/css" href="theme-default.css">
+  <script src="D:/calculator/code/js/script-math.js"></script>
+  <script src="D:/calculator/code/js/script-else.js"></script>
+  <link rel="stylesheet" id="id-page-style" type="text/css" href="D:/calculator/code/css/theme-default.css">
   <title>Calculator</title>
 </head>
 
 <body>
   <h1>Calculator by Roman</h1>
-  <div id="id-container">
-    <form name="nameCalculator" id="id-calculator">
+  <div class="rcalc-container">
+    <form name="nameCalculator" class="rcalc-calculator">
       <table>
         <tr>
           <td colspan="3"><input type="text" name="nameDisplayMain" id="id-display-main" maxlength="1000" disabled></td>
-          <td><input type="button" name="nameButtonClear" id="id-button-clear" value="C" onclick="clearDisplay();"></td>
+          <td><input type="button" name="nameButtonClear" class="rcalc-button-clear" value="C" onclick="clearDisplay();"></td>
         </tr>
         <tr>
           <td><input type="button" name="nameSeven" class="rcalc-button" value="7" onclick="testZero(nameSeven.value);displayNumber(nameSeven.value);"></td>
@@ -52,9 +52,9 @@
     <div class="rcalc-dropdown">
       <button class="rcalc-dropdown-button">Color</button>
       <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('theme-default.css')">Default theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('theme-sky.css')">Sky theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('theme-sand.css')">Sand theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('D:/calculator/code/css/theme-default.css')">Default theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('D:/calculator/code/css/theme-sky.css')">Sky theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('D:/calculator/code/css/theme-sand.css')">Sand theme</button>
       </div>
     </div>
   </div>
