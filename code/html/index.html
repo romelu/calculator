@@ -4,9 +4,9 @@
 <meta name="viewport" content="width=device-width , initial-scale=1">
 
 <head>
-  <script src="D:/calculator/code/js/script-math.js"></script>
-  <script src="D:/calculator/code/js/script-else.js"></script>
-  <link rel="stylesheet" id="id-page-style" type="text/css" href="D:/calculator/code/css/theme-default.css">
+  <script src="../js/rcalc-math.js"></script>
+  <script src="../js/rcalc-personalize.js"></script>
+  <link rel="stylesheet" id="id-page-style" type="text/css" href="../css/theme-default.css">
   <title>Calculator</title>
 </head>
 
@@ -16,7 +16,7 @@
     <form name="nameCalculator" class="rcalc-calculator">
       <table>
         <tr>
-          <td colspan="3"><input type="text" name="nameDisplayMain" id="id-display-main" maxlength="1000" disabled></td>
+          <td colspan="3"><input type="text" name="nameDisplayMain" class="rcalc-display-main" id="id-display-main" maxlength="1000" disabled></td>
           <td><input type="button" name="nameButtonClear" class="rcalc-button-clear" value="C" onclick="clearDisplay();"></td>
         </tr>
         <tr>
@@ -44,7 +44,7 @@
           <td><input type="button" name="nameAddition" class="rcalc-button" value="+" style="background-color: #39681c" onclick="displayNumber(nameAddition.value);"></td>
         </tr>
         <tr>
-          <td colspan="4"><textarea name="nameDisplayInfo" id="id-display-info" rows="2" disabled></textarea></td>
+          <td colspan="4"><textarea name="nameDisplayInfo" class="rcalc-display-info" id="id-display-info" rows="2" disabled></textarea></td>
         </tr>
       </table>
     </form>
@@ -52,9 +52,9 @@
     <div class="rcalc-dropdown">
       <button class="rcalc-dropdown-button">Color</button>
       <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('D:/calculator/code/css/theme-default.css')">Default theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('D:/calculator/code/css/theme-sky.css')">Sky theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('D:/calculator/code/css/theme-sand.css')">Sand theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-default.css')">Default theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sky.css')">Sky theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sand.css')">Sand theme</button>
       </div>
     </div>
   </div>
