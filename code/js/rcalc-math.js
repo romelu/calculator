@@ -17,11 +17,13 @@ function testZero(inputValue) {
   } else {
     isDivisionPerformed = false;
   }
+  displayNumber(inputValue);
 }
 
 // sets warning, division is in play, boolean used
-function setWarning() {
+function setWarning(inputValue) {
   isDivisionPerformed = true;
+  displayNumber(inputValue);
 }
 
 // clears both displays, resets boolean, enables buttons
