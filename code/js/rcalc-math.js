@@ -31,11 +31,11 @@ function clearDisplay() {
 }
 
 function result() {
-  var displayValue = nameCalculator.nameDisplayMain.value;
+  var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
   document.getElementById("id-display-info").value = "   Invalid entry!    Click C";
-  if (displayValue) {
-    nameCalculator.nameDisplayMain.value = eval(displayValue);
+  if (valueInserted) {
+    nameCalculator.nameDisplayMain.value = eval(valueInserted);
     enableButtons();
     document.getElementById("id-display-info").value = "";
   }
@@ -43,28 +43,28 @@ function result() {
 
 // disables buttons (operands and operators)
 function disableButtons() {
-  var buttonDisable = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < buttonDisable.length; i++) {
-    buttonDisable[i].disabled = true;
-    buttonDisable[i].style.color = "black";
+  var buttonsDisable = document.getElementsByClassName("rcalc-button");
+  for (var i = 0; i < buttonsDisable.length; i++) {
+    buttonsDisable[i].disabled = true;
+    buttonsDisable[i].style.color = "black";
   }
-  var buttonDisableOperator = document.getElementsByClassName("rcalc-button-operator");
-  for (var i = 0; i < buttonDisableOperator.length; i++) {
-    buttonDisableOperator[i].disabled = true;
-    buttonDisableOperator[i].style.color = "black";
+  var buttonsDisableOperator = document.getElementsByClassName("rcalc-button-operator");
+  for (var i = 0; i < buttonsDisableOperator.length; i++) {
+    buttonsDisableOperator[i].disabled = true;
+    buttonsDisableOperator[i].style.color = "black";
   }
 }
 
 // enables buttons (operands and operators)
 function enableButtons() {
-  var buttonEnable = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < buttonEnable.length; i++) {
-    buttonEnable[i].disabled = false;
-    buttonEnable[i].style.color = "white";
+  var buttonsEnable = document.getElementsByClassName("rcalc-button");
+  for (var i = 0; i < buttonsEnable.length; i++) {
+    buttonsEnable[i].disabled = false;
+    buttonsEnable[i].style.color = "white";
   }
-  var buttonEnableOperator = document.getElementsByClassName("rcalc-button-operator");
-  for (var i = 0; i < buttonEnableOperator.length; i++) {
-    buttonEnableOperator[i].disabled = false;
-    buttonEnableOperator[i].style.color = "white";
+  var buttonsEnableOperator = document.getElementsByClassName("rcalc-button-operator");
+  for (var i = 0; i < buttonsEnableOperator.length; i++) {
+    buttonsEnableOperator[i].disabled = false;
+    buttonsEnableOperator[i].style.color = "white";
   }
 }
