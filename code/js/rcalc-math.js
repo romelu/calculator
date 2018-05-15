@@ -1,4 +1,6 @@
 var isDivisionPerformed = false;
+const ID_DISPLAY_MAIN = "id-display-main";
+const ID_DISPLAY_INFO = "id-display-info";
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
@@ -9,7 +11,7 @@ function displayNumber(inputValue) {
 function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == 0) {
     disableButtons();
-    document.getElementById("id-display-info").value = "Can not devide by 0! Click C";
+    document.getElementById(ID_DISPLAY_INFO).value = "Can not devide by 0! Click C";
   } else {
     isDivisionPerformed = false;
   }
@@ -25,19 +27,19 @@ function setWarning(inputValue) {
 // clears both displays, resets boolean, enables buttons
 function clearDisplay() {
   isDivisionPerformed = false;
-  document.getElementById("id-display-main").value = "";
-  document.getElementById("id-display-info").value = "";
+  document.getElementById(ID_DISPLAY_MAIN).value = "";
+  document.getElementById(ID_DISPLAY_INFO).value = "";
   enableButtons();
 }
 
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
-  document.getElementById("id-display-info").value = "   Invalid entry!    Click C";
+  document.getElementById(ID_DISPLAY_INFO).value = "   Invalid entry!    Click C";
   if (valueInserted) {
     nameCalculator.nameDisplayMain.value = eval(valueInserted);
     enableButtons();
-    document.getElementById("id-display-info").value = "";
+    document.getElementById(ID_DISPLAY_INFO).value = "";
   }
 }﻿
 
