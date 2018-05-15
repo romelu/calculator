@@ -30,7 +30,7 @@ function clearDisplay() {
   enableButtons();
 }
 
-function result() {
+function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
   document.getElementById("id-display-info").value = "   Invalid entry!    Click C";
