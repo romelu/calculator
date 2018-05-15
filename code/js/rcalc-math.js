@@ -8,17 +8,8 @@ function displayNumber(inputValue) {
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == 0) {
-    var buttonDisable = document.getElementsByClassName("rcalc-button");
-    for (var i = 0; i < buttonDisable.length; i++) {
-      buttonDisable[i].disabled = true;
-      buttonDisable[i].style.color = "black";
-      document.getElementById("id-display-info").value = "Can not devide by 0! Click C";
-    }
-    var buttonDisableOperator = document.getElementsByClassName("rcalc-button-operator");
-    for (var i = 0; i < buttonDisableOperator.length; i++) {
-      buttonDisableOperator[i].disabled = true;
-      buttonDisableOperator[i].style.color = "black";
-    }
+    disableButtons();
+    document.getElementById("id-display-info").value = "Can not devide by 0! Click C";
   } else {
     isDivisionPerformed = false;
   }
@@ -36,6 +27,36 @@ function clearDisplay() {
   isDivisionPerformed = false;
   document.getElementById("id-display-main").value = "";
   document.getElementById("id-display-info").value = "";
+  enableButtons();
+}
+
+function result() {
+  var displayValue = nameCalculator.nameDisplayMain.value;
+  disableButtons();
+  document.getElementById("id-display-info").value = "   Invalid entry!    Click C";
+  if (displayValue) {
+    nameCalculator.nameDisplayMain.value = eval(displayValue);
+    enableButtons();
+    document.getElementById("id-display-info").value = "";
+  }
+}﻿
+
+// disables buttons (operands and operators)
+function disableButtons() {
+  var buttonDisable = document.getElementsByClassName("rcalc-button");
+  for (var i = 0; i < buttonDisable.length; i++) {
+    buttonDisable[i].disabled = true;
+    buttonDisable[i].style.color = "black";
+  }
+  var buttonDisableOperator = document.getElementsByClassName("rcalc-button-operator");
+  for (var i = 0; i < buttonDisableOperator.length; i++) {
+    buttonDisableOperator[i].disabled = true;
+    buttonDisableOperator[i].style.color = "black";
+  }
+}
+
+// enables buttons (operands and operators)
+function enableButtons() {
   var buttonEnable = document.getElementsByClassName("rcalc-button");
   for (var i = 0; i < buttonEnable.length; i++) {
     buttonEnable[i].disabled = false;
@@ -47,32 +68,3 @@ function clearDisplay() {
     buttonEnableOperator[i].style.color = "white";
   }
 }
-
-function result() {
-  var displayValue = nameCalculator.nameDisplayMain.value;
-  var buttonDisable = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < buttonDisable.length; i++) {
-    buttonDisable[i].disabled = true;
-    buttonDisable[i].style.color = "black";
-  }
-  var buttonDisableOperator = document.getElementsByClassName("rcalc-button-operator");
-  for (var i = 0; i < buttonDisableOperator.length; i++) {
-    buttonDisableOperator[i].disabled = true;
-    buttonDisableOperator[i].style.color = "black";
-  }
-  document.getElementById("id-display-info").value = "   Invalid entry!    Click C";
-  if (displayValue) {
-    nameCalculator.nameDisplayMain.value = eval(displayValue);
-    var buttonEnable = document.getElementsByClassName("rcalc-button");
-    for (var i = 0; i < buttonEnable.length; i++) {
-      buttonEnable[i].disabled = false;
-      buttonEnable[i].style.color = "white";
-    }
-    var buttonEnableOperator = document.getElementsByClassName("rcalc-button-operator");
-    for (var i = 0; i < buttonEnableOperator.length; i++) {
-      buttonEnableOperator[i].disabled = false;
-      buttonEnableOperator[i].style.color = "white";
-    }
-    document.getElementById("id-display-info").value = "";
-  }
-}﻿
