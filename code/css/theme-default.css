@@ -63,12 +63,24 @@ h1 {
   height: 55px;
 }
 
-/* all buttons of calculator accept C */
+/* all buttons of calculator accept C and operators */
 
 .rcalc-button {
   border: none;
   color: #FFFFFF;
   background-color: #1c3968;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* operator buttons*/
+
+.rcalc-button-operator {
+  border: none;
+  color: #FFFFFF;
+  background-color: #39681c;
   font-size: 40px;
   width: 60px;
   height: 60px;

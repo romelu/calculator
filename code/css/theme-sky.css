@@ -72,6 +72,18 @@ h1 {
   cursor: pointer;
 }
 
+/* operator buttons*/
+
+.rcalc-button-operator {
+  border: none;
+  color: #FFFFFF;
+  background-color: #39681c;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
 /* dropdown button */
 
 .rcalc-dropdown-button {
