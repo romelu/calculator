@@ -1,6 +1,9 @@
 var isDivisionPerformed = false;
 // utility
 const STRING_EMPTY = "";
+// buttons (operators and operands)
+const RCALC_BUTTON = "rcalc-button";
+const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
 // ids
 const ID_DISPLAY_MAIN = "id-display-main";
 const ID_DISPLAY_INFO = "id-display-info";
@@ -54,28 +57,28 @@ function evaluateDisplay() {
 
 // disables buttons (operands and operators)
 function disableButtons() {
-  var buttonsDisable = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < buttonsDisable.length; i++) {
-    buttonsDisable[i].disabled = true;
-    buttonsDisable[i].style.color = COLOR_BLACK;
-  }
-  var buttonsDisableOperator = document.getElementsByClassName("rcalc-button-operator");
-  for (var i = 0; i < buttonsDisableOperator.length; i++) {
-    buttonsDisableOperator[i].disabled = true;
-    buttonsDisableOperator[i].style.color = COLOR_BLACK;
+  changeButtonsDisable(RCALC_BUTTON, COLOR_BLACK, true);
+  changeButtonsDisable(RCALC_BUTTON_OPERATOR, COLOR_BLACK, true);
+}
+
+function changeButtonsDisable(buttonsCssClass, color, disable) {
+  var buttonsForDisable = document.getElementsByClassName(buttonsCssClass);
+  for (var i = 0; i < buttonsForDisable.length; i++) {
+    buttonsForDisable[i].disabled = disable;
+    buttonsForDisable[i].style.color = color;
   }
 }
 
 // enables buttons (operands and operators)
 function enableButtons() {
-  var buttonsEnable = document.getElementsByClassName("rcalc-button");
-  for (var i = 0; i < buttonsEnable.length; i++) {
-    buttonsEnable[i].disabled = false;
-    buttonsEnable[i].style.color = COLOR_WHITE;
-  }
-  var buttonsEnableOperator = document.getElementsByClassName("rcalc-button-operator");
-  for (var i = 0; i < buttonsEnableOperator.length; i++) {
-    buttonsEnableOperator[i].disabled = false;
-    buttonsEnableOperator[i].style.color = COLOR_WHITE;
+  changeButtonsEnable(RCALC_BUTTON, COLOR_WHITE, false);
+  changeButtonsEnable(RCALC_BUTTON_OPERATOR, COLOR_WHITE, false);
+}
+
+function changeButtonsEnable(buttonsCssClass, color, enable) {
+  var buttonsForEnable = document.getElementsByClassName(buttonsCssClass);
+  for (var i = 0; i < buttonsForEnable.length; i++) {
+    buttonsForEnable[i].disabled = enable;
+    buttonsForEnable[i].style.color = color;
   }
 }
