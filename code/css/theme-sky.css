@@ -38,11 +38,12 @@ h1 {
 
 .rcalc-display-main {
   text-align: right;
-  border: none;
+  border-style: solid;
+  border-color: #555d75;
   color: #000000;
   background-color: #F0F8FF;
   font-size: 40px;
-  width: 187px;
+  width: 186px;
   height: 55px;
 }
 
@@ -50,12 +51,14 @@ h1 {
 
 .rcalc-display-info {
   display: block;
-  border: none;
   text-align: center;
+  border-style: solid;
+  border-color: #555d75;
+  border-width: 2px;
   font-weight: bold;
   color: #FF0000;
   background-color: #F0F8FF;
-  font-size: 18px;
+  font-size: 17px;
   width: 250px;
   height: 55px;
 }

@@ -1,5 +1,6 @@
 // utility
 const STRING_EMPTY = "";
+const NUMBER_NULL = "0";
 // buttons (operators and operands)
 const RCALC_BUTTON = "rcalc-button";
 const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
@@ -22,7 +23,7 @@ function displayNumber(inputValue) {
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
-  if (isDivisionPerformed && inputValue == 0) {
+  if (isDivisionPerformed && inputValue == NUMBER_NULL) {
     disableButtons();
     document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_DIVISION_BY_ZERO;
   } else {
