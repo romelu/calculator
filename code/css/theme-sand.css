@@ -1,0 +1,140 @@
+body {
+  background-color: #e2d9b5;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+}
+
+/* box for entire calculator - needed to position the content */
+
+.rcalc-container {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+/* calculator form */
+
+.rcalc-calculator {
+  background-color: #474024;
+  display: inline-block;
+  padding: 2px;
+}
+
+/* clear button */
+
+.rcalc-button-clear {
+  background-color: #681c1c;
+  border: none;
+  color: #FFFFFF;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* result display */
+
+.rcalc-display-main {
+  text-align: right;
+  border-style: solid;
+  border-color: #727555;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 40px;
+  width: 186px;
+  height: 55px;
+}
+
+/* error display */
+
+.rcalc-display-info {
+  display: block;
+  text-align: center;
+  border-style: solid;
+  border-color: #727555;
+  border-width: 2px;
+  font-weight: bold;
+  color: #FF0000;
+  background-color: #FFFFFF;
+  font-size: 17px;
+  width: 250px;
+  height: 55px;
+}
+
+/* all buttons of calculator accept C */
+
+.rcalc-button {
+  border: none;
+  color: #FFFFFF;
+  background-color: #727555;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* operator buttons*/
+
+.rcalc-button-operator {
+  border: none;
+  color: #FFFFFF;
+  background-color: #39681c;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* dropdown button */
+
+.rcalc-dropdown-button {
+  background-color: #474024;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/* the container <div> - needed to position the dropdown content */
+
+.rcalc-dropdown {
+  display: inline-block;
+}
+
+/* dropdown content (hidden by default) */
+
+.rcalc-dropdown-content {
+  display: none;
+}
+
+/* buttons inside the dropdown */
+
+.rcalc-button-css-swap {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+/* change color of dropdown buttons on hover */
+
+.rcalc-button-css-swap:hover {
+  background-color: #474024;
+  color: #FFFFFF;
+}
+
+/* show the dropdown menu on hover */
+
+.rcalc-dropdown:hover .rcalc-dropdown-content {
+  display: block;
+}
