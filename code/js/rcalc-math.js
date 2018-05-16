@@ -1,4 +1,3 @@
-var isDivisionPerformed = false;
 // utility
 const STRING_EMPTY = "";
 // buttons (operators and operands)
@@ -13,6 +12,8 @@ const COLOR_WHITE = "white";
 // messages
 const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0! Click C";
 const MESSAGE_ERROR_INVALID_ENTRY = "   Invalid entry!    Click C";
+
+var isDivisionPerformed = false;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
@@ -57,28 +58,19 @@ function evaluateDisplay() {
 
 // disables buttons (operands and operators)
 function disableButtons() {
-  changeButtonsDisable(RCALC_BUTTON, COLOR_BLACK, true);
-  changeButtonsDisable(RCALC_BUTTON_OPERATOR, COLOR_BLACK, true);
+  changeButtonsDisabled(RCALC_BUTTON, COLOR_BLACK, true);
+  changeButtonsDisabled(RCALC_BUTTON_OPERATOR, COLOR_BLACK, true);
+}
+// enables buttons (operands and operators)
+function enableButtons() {
+  changeButtonsDisabled(RCALC_BUTTON, COLOR_WHITE, false);
+  changeButtonsDisabled(RCALC_BUTTON_OPERATOR, COLOR_WHITE, false);
 }
 
-function changeButtonsDisable(buttonsCssClass, color, disable) {
+function changeButtonsDisabled(buttonsCssClass, color, disable) {
   var buttonsForDisable = document.getElementsByClassName(buttonsCssClass);
   for (var i = 0; i < buttonsForDisable.length; i++) {
     buttonsForDisable[i].disabled = disable;
     buttonsForDisable[i].style.color = color;
-  }
-}
-
-// enables buttons (operands and operators)
-function enableButtons() {
-  changeButtonsEnable(RCALC_BUTTON, COLOR_WHITE, false);
-  changeButtonsEnable(RCALC_BUTTON_OPERATOR, COLOR_WHITE, false);
-}
-
-function changeButtonsEnable(buttonsCssClass, color, enable) {
-  var buttonsForEnable = document.getElementsByClassName(buttonsCssClass);
-  for (var i = 0; i < buttonsForEnable.length; i++) {
-    buttonsForEnable[i].disabled = enable;
-    buttonsForEnable[i].style.color = color;
   }
 }
