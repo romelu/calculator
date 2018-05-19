@@ -1,6 +1,6 @@
 // utility
 const STRING_EMPTY = "";
-const NUMBER_NULL = "0";
+const NUMBER_NULL = 0;
 // buttons (operators and operands)
 const RCALC_BUTTON = "rcalc-button";
 const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
@@ -11,8 +11,8 @@ const ID_DISPLAY_INFO = "id-display-info";
 const COLOR_BLACK = "black";
 const COLOR_WHITE = "white";
 // messages
-const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0! Click C";
-const MESSAGE_ERROR_INVALID_ENTRY = "   Invalid entry!    Click C";
+const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0!\nClick C";
+const MESSAGE_ERROR_INVALID_ENTRY = "Invalid entry!\nClick C";
 
 var isDivisionPerformed = false;
 

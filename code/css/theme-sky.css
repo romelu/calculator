@@ -50,6 +50,7 @@ h1 {
 /* error display */
 
 .rcalc-display-info {
+  resize: none;
   display: block;
   text-align: center;
   border-style: solid;
@@ -109,6 +110,7 @@ h1 {
 
 .rcalc-dropdown-content {
   display: none;
+  position: absolute;
 }
 
 /* buttons inside the dropdown */
