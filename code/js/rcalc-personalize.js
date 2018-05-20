@@ -10,7 +10,7 @@ function changeSizeSmall() {
   changeSize("rcalc-button-operator", 20, 30, 30);
   changeSize("rcalc-button-clear", 20, 30, 30);
   changeSize("rcalc-display-main", 20, 93, 25);
-  changeSize("rcalc-display-info", 10, 125, 25);
+  changeSize("rcalc-display-info", 8, 125, 25);
 }
 
 function changeSizeDefault() {
