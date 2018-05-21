@@ -1,4 +1,8 @@
 const ID_PAGE_STYLE = "id-page-style";
+// classes
+const RCALC_BUTTON_CLEAR = "rcalc-button-clear";
+const RCALC_DISPLAY_MAIN = "rcalc-display-main";
+const RCALC_DISPLAY_INFO = "rcalc-display-info";
 
 // changing the attribute href, which results in changing css file applied
 function swapCssFile(theme) {
@@ -6,34 +10,34 @@ function swapCssFile(theme) {
 }
 
 function changeSizeSmall() {
-  changeSize("rcalc-button", 20, 30, 30);
-  changeSize("rcalc-button-operator", 20, 30, 30);
-  changeSize("rcalc-button-clear", 20, 30, 30);
-  changeSize("rcalc-display-main", 20, 93, 25);
-  changeSize("rcalc-display-info", 8, 125, 25);
+  changeSize(RCALC_BUTTON, 20, 30, 30);
+  changeSize(RCALC_BUTTON_OPERATOR, 20, 30, 30);
+  changeSize(RCALC_BUTTON_CLEAR, 20, 30, 30);
+  changeSize(RCALC_DISPLAY_MAIN, 20, 93, 25);
+  changeSize(RCALC_DISPLAY_INFO, 8, 125, 25);
 }
 
 function changeSizeDefault() {
-  changeSize("rcalc-button", 40, 60, 60);
-  changeSize("rcalc-button-operator", 40, 60, 60);
-  changeSize("rcalc-button-clear", 40, 60, 60);
-  changeSize("rcalc-display-main", 40, 186, 55);
-  changeSize("rcalc-display-info", 17, 250, 55);
+  changeSize(RCALC_BUTTON, 40, 60, 60);
+  changeSize(RCALC_BUTTON_OPERATOR, 40, 60, 60);
+  changeSize(RCALC_BUTTON_CLEAR, 40, 60, 60);
+  changeSize(RCALC_DISPLAY_MAIN, 40, 186, 55);
+  changeSize(RCALC_DISPLAY_INFO, 17, 250, 55);
 }
 
 function changeSizeLarge() {
-  changeSize("rcalc-button", 70, 100, 100);
-  changeSize("rcalc-button-operator", 70, 100, 100);
-  changeSize("rcalc-button-clear", 70, 100, 100);
-  changeSize("rcalc-display-main", 70, 305, 100);
-  changeSize("rcalc-display-info", 30, 410, 100);
+  changeSize(RCALC_BUTTON, 70, 100, 100);
+  changeSize(RCALC_BUTTON_OPERATOR, 70, 100, 100);
+  changeSize(RCALC_BUTTON_CLEAR, 70, 100, 100);
+  changeSize(RCALC_DISPLAY_MAIN, 70, 305, 100);
+  changeSize(RCALC_DISPLAY_INFO, 30, 410, 100);
 }
 
-function changeSize(cssClass, fontSize, width, height) {
-  var cssClass = document.getElementsByClassName(cssClass);
-  for (var i = 0; i < cssClass.length; i++) {
-    cssClass[i].style.fontSize = fontSize + "px";
-    cssClass[i].style.width = width + "px";
-    cssClass[i].style.height = height + "px";
+function changeSize(rcalcCssClass, fontSize, width, height) {
+  var buttonsDisplays = document.getElementsByClassName(rcalcCssClass);
+  for (var i = 0; i < buttonsDisplays.length; i++) {
+    buttonsDisplays[i].style.fontSize = fontSize + "px";
+    buttonsDisplays[i].style.width = width + "px";
+    buttonsDisplays[i].style.height = height + "px";
   }
 }

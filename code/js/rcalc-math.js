@@ -1,7 +1,7 @@
 // utility
 const STRING_EMPTY = "";
 const NUMBER_NULL = 0;
-// buttons (operators and operands)
+// classes 
 const RCALC_BUTTON = "rcalc-button";
 const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
 // ids
