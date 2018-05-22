@@ -62,6 +62,5 @@ function changeSize(rcalcCssClass, fontSize, width, height) {
 }
 
 function addSuffixPx(size) {
-  var suffixPxAdded = size + SUFFIX_PX;
-  return (suffixPxAdded);
+  return size + SUFFIX_PX;
 }
