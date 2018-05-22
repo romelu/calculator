@@ -55,8 +55,14 @@ function changeSizeLarge() {
 function changeSize(rcalcCssClass, fontSize, width, height) {
   var buttonsDisplays = document.getElementsByClassName(rcalcCssClass);
   for (var i = 0; i < buttonsDisplays.length; i++) {
-    buttonsDisplays[i].style.fontSize = fontSize + SUFFIX_PX;
-    buttonsDisplays[i].style.width = width + SUFFIX_PX;
-    buttonsDisplays[i].style.height = height + SUFFIX_PX;
+    buttonsDisplays[i].style.fontSize = addSuffixPx(fontSize);
+    buttonsDisplays[i].style.width = addSuffixPx(width);
+    buttonsDisplays[i].style.height = addSuffixPx(height);
   }
+}
+
+function addSuffixPx(size) {
+  var suffixPxAdded;
+  suffixPxAdded = size + SUFFIX_PX;
+  return (suffixPxAdded);
 }
