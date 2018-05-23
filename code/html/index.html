@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width , initial-scale=1">
   <script src="../js/rcalc-math.js"></script>
-  <script src="../js/rcalc-personalize.js"></script>
+  <script src="../js/rcalc-theme.js"></script>
+  <script src="../js/rcalc-size.js"></script>
   <link rel="stylesheet" id="id-page-style" type="text/css" href="../css/theme-default.css">
   <title>Calculator</title>
 </head>
@@ -52,9 +53,24 @@
     <div class="rcalc-dropdown">
       <button class="rcalc-dropdown-button">Color</button>
       <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-default.css')">Default theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sky.css')">Sky theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sand.css')">Sand theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
+      </div>
+    </div>
+    <div class="rcalc-dropdown">
+      <button class="rcalc-dropdown-button">Size</button>
+      <div class="rcalc-dropdown-content">
+        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeSmall();">Small</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeDefault();">Default</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeLarge();">Large</button>
+      </div>
+    </div>
+    <div class="rcalc-dropdown">
+      <button class="rcalc-dropdown-button">Language</button>
+      <div class="rcalc-dropdown-content">
+        <button type="button" class="rcalc-button-css-swap" onclick="changeLanguage();">English</button>
+        <button type="button" class="rcalc-button-css-swap" onclick="changeLanguage();">Czech</button>
       </div>
     </div>
   </div>

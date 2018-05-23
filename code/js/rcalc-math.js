@@ -1,18 +1,18 @@
 // utility
 const STRING_EMPTY = "";
-const NUMBER_NULL = "0";
-// buttons (operators and operands)
+const NUMBER_ZERO = 0;
+// classes
 const RCALC_BUTTON = "rcalc-button";
 const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
 // ids
 const ID_DISPLAY_MAIN = "id-display-main";
 const ID_DISPLAY_INFO = "id-display-info";
 // colors
-const COLOR_BLACK = "black";
-const COLOR_WHITE = "white";
+const COLOR_BLACK = "#000000";
+const COLOR_WHITE = "#ffffff";
 // messages
-const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0! Click C";
-const MESSAGE_ERROR_INVALID_ENTRY = "   Invalid entry!    Click C";
+const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0!\nClick C";
+const MESSAGE_ERROR_INVALID_ENTRY = "Invalid entry!\nClick C";
 
 var isDivisionPerformed = false;
 
@@ -23,7 +23,7 @@ function displayNumber(inputValue) {
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
-  if (isDivisionPerformed && inputValue == NUMBER_NULL) {
+  if (isDivisionPerformed && inputValue == NUMBER_ZERO) {
     disableButtons();
     document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_DIVISION_BY_ZERO;
   } else {
