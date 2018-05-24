@@ -1,19 +1,3 @@
-// utility
-const STRING_EMPTY = "";
-const NUMBER_ZERO = 0;
-// classes
-const RCALC_BUTTON = "rcalc-button";
-const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
-// ids
-const ID_DISPLAY_MAIN = "id-display-main";
-const ID_DISPLAY_INFO = "id-display-info";
-// colors
-const COLOR_BLACK = "#000000";
-const COLOR_WHITE = "#ffffff";
-// messages
-const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0!\nClick C";
-const MESSAGE_ERROR_INVALID_ENTRY = "Invalid entry!\nClick C";
-
 var isDivisionPerformed = false;
 
 // displays numerous inputs (numbers) on the screen
