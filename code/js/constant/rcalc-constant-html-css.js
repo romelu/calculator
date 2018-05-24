@@ -21,5 +21,8 @@ const WIDTH_LARGE_100_PX = 100;
 const WIDTH_LARGE_305_PX = 305;
 const WIDTH_LARGE_410_PX = 410;
 const HEIGHT_LARGE_100_PX = 100;
-// zero﻿
-const NUMBER_ZERO = 0;
+// adds to a value px, making it work to change atributes set in px
+const SUFFIX_PX = "px";
+// colors
+const COLOR_BLACK = "#000000";
+const COLOR_WHITE = "#ffffff";﻿
