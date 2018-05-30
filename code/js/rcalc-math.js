@@ -9,7 +9,7 @@ function displayNumber(inputValue) {
 function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == NUMBER_ZERO) {
     disableButtons();
-    document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_DIVISION_BY_ZERO;
+    document.getElementById(ID_DISPLAY_INFO).value = localize("messageErrorDivisionByZero", language);
   } else {
     isDivisionPerformed = false;
   }
@@ -33,7 +33,7 @@ function clearDisplay() {
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
-  document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_INVALID_ENTRY;
+  document.getElementById(ID_DISPLAY_INFO).value = localize("messageErrorInvalidEntry", language);
   if (valueInserted) {
     nameCalculator.nameDisplayMain.value = eval(valueInserted);
     enableButtons();

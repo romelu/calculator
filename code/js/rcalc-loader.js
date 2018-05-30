@@ -9,6 +9,7 @@ function loadJsScript(jsFilePath) {
 loadJsScript("../js/rcalc-math.js")﻿;
 loadJsScript("../js/rcalc-theme.js")﻿;
 loadJsScript("../js/rcalc-size.js");
+loadJsScript("../js/rcalc-Language.js");
 loadJsScript("../js/constant/rcalc-constant-html-class.js");
 loadJsScript("../js/constant/rcalc-constant-html-id.js");
 loadJsScript("../js/constant/rcalc-constant-html-css.js");
