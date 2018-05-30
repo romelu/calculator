@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width , initial-scale=1">
   <script src="../js/rcalc-loader.js"></script>
   <link rel="stylesheet" id="id-page-style" type="text/css" href="../css/theme-default.css">
-  <title>Calculator</title>
+  <title id="id-title">Calculator</title>
 </head>
 
 <body>
-  <h1>Calculator by Roman</h1>
+  <h1 id="id-heading">Calculator by Roman</h1>
   <div class="rcalc-container">
     <form name="nameCalculator" class="rcalc-calculator">
       <table>
@@ -49,26 +49,26 @@
     </form>
     <br>
     <div class="rcalc-dropdown">
-      <button class="rcalc-dropdown-button">Color</button>
+      <button class="rcalc-dropdown-button" id="id-button-color">Color</button>
       <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-default-theme" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-sky-theme" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-sand-theme" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
       </div>
     </div>
     <div class="rcalc-dropdown">
-      <button class="rcalc-dropdown-button">Size</button>
+      <button class="rcalc-dropdown-button" id="id-button-size">Size</button>
       <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeSmall();">Small</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeDefault();">Default</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeLarge();">Large</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-small" onclick="changeSizeSmall();">Small</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-default" onclick="changeSizeDefault();">Default</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-large" onclick="changeSizeLarge();">Large</button>
       </div>
     </div>
     <div class="rcalc-dropdown">
-      <button class="rcalc-dropdown-button">Language</button>
+      <button class="rcalc-dropdown-button" id="id-button-language">Language</button>
       <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="changeLanguage();">English</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="changeLanguage();">Czech</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-english" onclick="setLanguage('en');">English</button>
+        <button type="button" class="rcalc-button-css-swap" id="id-button-czech" onclick="setLanguage('cs');">Czech</button>
       </div>
     </div>
   </div>
