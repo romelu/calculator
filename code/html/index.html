@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width , initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/rcalc-loader.js"></script>
+
+  <!-- i18n libraries supporting localization -->
+  <script src="../js/lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.language.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.parser.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+  <script src="../js/lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+
+  <!-- history library -->
+  <script src="../js/lib/history/jquery.history.js"></script>
+
+  <!-- url library -->
+  <script src="../js/lib/url/url.min.js"></script>
+
   <link rel="stylesheet" id="id-page-style" type="text/css" href="../css/theme-default.css">
-  <title>Calculator</title>
+  <title data-i18n="rcalc-title">Calculator</title>
 </head>
 
 <body>
-  <h1>Calculator by Roman</h1>
+  <h1 data-i18n="rcalc-h1">Calculator by Roman</h1>
   <div class="rcalc-container">
     <form name="nameCalculator" class="rcalc-calculator">
       <table>
@@ -48,31 +66,30 @@
       </table>
     </form>
     <br>
-    <div class="rcalc-dropdown">
-      <button class="rcalc-dropdown-button">Color</button>
-      <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
+    <div class="rcalc-dropdown-color">
+      <button class="rcalc-dropdown-button-color" data-i18n="rcalc-dropdownButtonColor">Color</button>
+      <div class="rcalc-dropdown-content-color">
+        <button type="button" class="rcalc-button-css-swap" data-i18n="rcalc-dropdownContentDefaultTheme" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
+        <button type="button" class="rcalc-button-css-swap" data-i18n="rcalc-dropdownContentSkyTheme" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
+        <button type="button" class="rcalc-button-css-swap" data-i18n="rcalc-dropdownContentSandTheme" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
       </div>
     </div>
-    <div class="rcalc-dropdown">
-      <button class="rcalc-dropdown-button">Size</button>
-      <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeSmall();">Small</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeDefault();">Default</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="changeSizeLarge();">Large</button>
+    <div class="rcalc-dropdown-size">
+      <button class="rcalc-dropdown-button-size" data-i18n="rcalc-dropdownButtonSize">Size</button>
+      <div class="rcalc-dropdown-content-size">
+        <button type="button" class="rcalc-button-size-swap" data-i18n="rcalc-dropdownContentSmall" onclick="changeSizeSmall();">Small</button>
+        <button type="button" class="rcalc-button-size-swap" data-i18n="rcalc-dropdownContentDefault" onclick="changeSizeDefault();">Default</button>
+        <button type="button" class="rcalc-button-size-swap" data-i18n="rcalc-dropdownContentLarge" onclick="changeSizeLarge();">Large</button>
       </div>
     </div>
-    <div class="rcalc-dropdown">
-      <button class="rcalc-dropdown-button">Language</button>
-      <div class="rcalc-dropdown-content">
-        <button type="button" class="rcalc-button-css-swap" onclick="changeLanguage();">English</button>
-        <button type="button" class="rcalc-button-css-swap" onclick="changeLanguage();">Czech</button>
+    <div class="rcalc-dropdown-language">
+      <button class="rcalc-dropdown-button-language" data-i18n="rcalc-dropdownButtonLanguage">Language</button>
+      <div class="rcalc-dropdown-content-language">
+        <a href="#" class="rcalc-button-language-swap" data-locale="en" data-i18n="rcalc-dropdownContentEnglish">English</a>
+        <a href="#" class="rcalc-button-language-swap" data-locale="cs" data-i18n="rcalc-dropdownContentCzech">Czech</a>
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

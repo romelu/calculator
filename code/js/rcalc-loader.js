@@ -6,6 +6,8 @@ function loadJsScript(jsFilePath) {
   document.getElementsByTagName("head")[0].appendChild(jsScript);
 }
 
+// scripts to be injected to the html file <head> tag
+loadJsScript("../js/rcalc-localization.js")﻿;
 loadJsScript("../js/rcalc-math.js")﻿;
 loadJsScript("../js/rcalc-theme.js")﻿;
 loadJsScript("../js/rcalc-size.js");

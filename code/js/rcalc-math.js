@@ -30,6 +30,7 @@ function clearDisplay() {
   enableButtons();
 }
 
+// evaluates cotent of main display
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
@@ -52,6 +53,7 @@ function enableButtons() {
   changeButtonsDisabled(RCALC_BUTTON_OPERATOR, COLOR_WHITE, false);
 }
 
+// loops trough buttons and makes an action
 function changeButtonsDisabled(buttonsCssClass, color, disable) {
   var buttonsForDisable = document.getElementsByClassName(buttonsCssClass);
   for (var i = 0; i < buttonsForDisable.length; i++) {
