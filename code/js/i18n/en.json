@@ -5,15 +5,21 @@
   },
   "rcalc-title": "Calculator",
   "rcalc-h1": "Calculator by Roman",
+
   "rcalc-dropdownButtonColor": "Color",
   "rcalc-dropdownContentDefaultTheme": "Default Theme",
   "rcalc-dropdownContentSkyTheme": "Sky Theme",
   "rcalc-dropdownContentSandTheme": "Sand Theme",
+
   "rcalc-dropdownButtonSize": "Size",
   "rcalc-dropdownContentSmall": "Small",
   "rcalc-dropdownContentDefault": "Default",
   "rcalc-dropdownContentLarge": "Large",
+
   "rcalc-dropdownButtonLanguage": "Language",
   "rcalc-dropdownContentEnglish": "English",
-  "rcalc-dropdownContentCzech": "Czech"
+  "rcalc-dropdownContentCzech": "Czech",
+
+  "rcalc-messageErrorDivisionByZero": "Can not devide by 0!\nClick C",
+  "rcalc-messageErrorInvalidEntry": "Invalid entry!\nClick C"
 }
