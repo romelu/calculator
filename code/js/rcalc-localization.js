@@ -8,8 +8,8 @@ var set_locale_to = function(locale) {
 
 jQuery(function() {
   $.i18n().load({
-    'en': '../js/localization/en.json',
-    'cs': '../js/localization/cs.json'
+    'en': EN_JSON_FILE_PATH,
+    'cs': CS_JSON_FILE_PATH
   }).done(function() {
     set_locale_to(url(QUESTION_MARK_LOCALE));
 
@@ -17,7 +17,7 @@ jQuery(function() {
       set_locale_to(url(QUESTION_MARK_LOCALE));
     });
 
-    $('.rcalc-dropdown-content-language').on('click', 'a', function(e) {
+    $(DOT + RCALC_DROPDOWN_CONTENT_LANGUAGE).on('click', 'a', function(e) {
       e.preventDefault();
       History.pushState(null, null, "?locale=" + $(this).data('locale'));
     });
