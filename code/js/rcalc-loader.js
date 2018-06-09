@@ -11,17 +11,17 @@ function loadScript(jsFilePath) {
 loadScript("../js/ext-libs/jquery/jquery-3.3.1.min.js");
 
 // i18n library supporting localization
-loadScript("../js/ext-libs/CLDRPluralRuleParser/CLDRPluralRuleParser.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.messagestore.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.fallbacks.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.language.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.parser.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.emitter.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.emitter.bidi.js");
+loadScript("../js/ext-libs/CLDRPluralRuleParser/CLDRPluralRuleParser.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.messagestore.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.fallbacks.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.language.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.parser.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.emitter.min.js");
+loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.emitter.bidi.min.js");
 
 // history library
-loadScript("../js/ext-libs/history/jquery.history.js");
+loadScript("../js/ext-libs/history/jquery.history.min.js");
 
 // url library
 loadScript("../js/ext-libs/url/url.min.js");
