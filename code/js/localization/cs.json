@@ -1,0 +1,25 @@
+{
+  "@metadata": {
+    "author": "Roman",
+    "locale": "cs"
+  },
+  "calculator.title": "Kalkulačka",
+  "calculator.h1": "Romanova Kalkulačka",
+
+  "calculator.dropdown.button.color": "Barva",
+  "calculator.dropdown.content.default.theme": "Výchozí téma",
+  "calculator.dropdown.content.sky.theme": "Téma nebe",
+  "calculator.dropdown.content.sand.theme": "Téma písek",
+
+  "calculator.dropdown.button.size": "Velikost",
+  "calculator.dropdown.content.small": "Malá",
+  "calculator.dropdown.content.default": "Výchozí",
+  "calculator.dropdown.content.large": "Velká",
+
+  "caclculator.dropdown.button.language": "Jazyk",
+  "calculator.dropdown.content.english": "Angličtina",
+  "calculator.dropdown.content.czech": "Čeština",
+
+  "calculator.message.error.division.by.zero": "Nulou nelze dělit!\nKlikněte C",
+  "calculator.message.error.invalid.entry": "Neplatný vstup!\nKlikněte C"
+}

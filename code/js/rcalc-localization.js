@@ -8,13 +8,13 @@ var set_locale_to = function(locale) {
 
 jQuery(function() {
   $.i18n().load({
-    'en': '../js/i18n/en.json',
-    'cs': '../js/i18n/cs.json'
+    'en': '../js/localization/en.json',
+    'cs': '../js/localization/cs.json'
   }).done(function() {
-    set_locale_to(url('?locale'));
+    set_locale_to(url(QUESTION_MARK_LOCALE));
 
     History.Adapter.bind(window, 'statechange', function() {
-      set_locale_to(url('?locale'));
+      set_locale_to(url(QUESTION_MARK_LOCALE));
     });
 
     $('.rcalc-dropdown-content-language').on('click', 'a', function(e) {

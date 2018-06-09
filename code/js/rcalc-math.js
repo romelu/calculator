@@ -9,7 +9,7 @@ function displayNumber(inputValue) {
 function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == NUMBER_ZERO) {
     disableButtons();
-    document.getElementById(ID_DISPLAY_INFO).value = $.i18n('rcalc-messageErrorDivisionByZero');
+    document.getElementById(ID_DISPLAY_INFO).value = $.i18n(MESSAGE_ERROR_DIVISION_BY_ZERO);
   } else {
     isDivisionPerformed = false;
   }
@@ -34,7 +34,7 @@ function clearDisplay() {
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
-  document.getElementById(ID_DISPLAY_INFO).value = $.i18n('rcalc-messageErrorInvalidEntry');
+  document.getElementById(ID_DISPLAY_INFO).value = $.i18n(MESSAGE_ERROR_INVALID_ENTRY);
   if (valueInserted) {
     nameCalculator.nameDisplayMain.value = eval(valueInserted);
     enableButtons();
