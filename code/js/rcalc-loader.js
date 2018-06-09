@@ -8,23 +8,23 @@ function loadScript(jsFilePath) {
 }
 
 // jquery 3.3.1
-loadScript("../js/ext-libs/jquery/jquery-3.3.1.min.js");
+loadScript("../js/ext-lib/jquery/jquery-3.3.1.min.js");
 
 // i18n library supporting localization
-loadScript("../js/ext-libs/CLDRPluralRuleParser/CLDRPluralRuleParser.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.messagestore.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.fallbacks.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.language.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.parser.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.emitter.min.js");
-loadScript("../js/ext-libs/jquery.i18n/jquery.i18n.emitter.bidi.min.js");
+loadScript("../js/ext-lib/CLDRPluralRuleParser/CLDRPluralRuleParser.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.messagestore.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.fallbacks.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.language.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.parser.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.emitter.min.js");
+loadScript("../js/ext-lib/jquery.i18n/jquery.i18n.emitter.bidi.min.js");
 
 // history library
-loadScript("../js/ext-libs/history/jquery.history.min.js");
+loadScript("../js/ext-lib/history/jquery.history.min.js");
 
 // url library
-loadScript("../js/ext-libs/url/url.min.js");
+loadScript("../js/ext-lib/url/url.min.js");
 
 // rcalc constants
 loadScript("../js/constant/rcalc-constant-html-class.js");
