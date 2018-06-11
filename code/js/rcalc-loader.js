@@ -27,13 +27,13 @@ loadScript("../js/ext-lib/history/jquery.history.min.js");
 loadScript("../js/ext-lib/url/url.min.js");
 
 // rcalc constants
-loadScript("../js/constant/rcalc-constant-html-class.js");
-loadScript("../js/constant/rcalc-constant-html-id.js");
-loadScript("../js/constant/rcalc-constant-html-css.js");
-loadScript("../js/constant/rcalc-constant-string-utility.js");
-loadScript("../js/constant/rcalc-constant-number-utility.js");
-loadScript("../js/constant/rcalc-constant-string-key-localization.js");
-loadScript("../js/constant/rcalc-constant-enum-file-path.js");
+loadScript("../js/constant/html-class-constant.js");
+loadScript("../js/constant/html-id-constant.js");
+loadScript("../js/constant/html-css-constant.js");
+loadScript("../js/constant/string-utility-constant.js");
+loadScript("../js/constant/number-utility-constant.js");
+loadScript("../js/constant/string-key-localization-constant.js");
+loadScript("../js/constant/file-path-constant.js");
 
 // rcalc functionalities
 loadScript("../js/rcalc-localization.js")﻿;

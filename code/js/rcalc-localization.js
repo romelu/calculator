@@ -10,8 +10,8 @@ var set_locale_to = function(locale) {
 
 jQuery(function() {
   $.i18n().load({
-    'en': filePath.EN_JSON_FILE_PATH,
-    'cs': filePath.CS_JSON_FILE_PATH
+    'en': FILE_PATH_CONST.EN_JSON_FILE_PATH,
+    'cs': FILE_PATH_CONST.CS_JSON_FILE_PATH
   }).done(function() {
     set_locale_to(url(QUESTION_MARK + LOCALE));
 
