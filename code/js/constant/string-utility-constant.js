@@ -1,8 +1,10 @@
-// special characters
-const STRING_EMPTY = "";
-const DOT = ".";
-const QUESTION_MARK = "?"
-const EQUALS_SIGN = "="
+ const STRING_UTILITY_CONST = {
+   // special characters
+   STRING_EMPTY: "",
+   DOT: ".",
+   QUESTION_MARK: "?",
+   EQUALS_SIGN: "=",
 
-// adds to a value px, making it work to change attributes set in px
-const SUFFIX_PX = "px";
+   // adds to a value px, making it work to change attributes set in px
+   SUFFIX_PX: "px"
+ }
