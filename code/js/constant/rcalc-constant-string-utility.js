@@ -1,9 +1,8 @@
 // special characters
 const STRING_EMPTY = "";
+const DOT = ".";
+const QUESTION_MARK = "?"
+const EQUALS_SIGN = "="
 
-// messages
-const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0!\nClick C";
-const MESSAGE_ERROR_INVALID_ENTRY = "Invalid entry!\nClick C";﻿
-
-// adds to a value px, making it work to change atributes set in px
+// adds to a value px, making it work to change attributes set in px
 const SUFFIX_PX = "px";

@@ -9,7 +9,7 @@ function displayNumber(inputValue) {
 function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == NUMBER_ZERO) {
     disableButtons();
-    document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_DIVISION_BY_ZERO;
+    document.getElementById(ID_DISPLAY_INFO).value = $.i18n(MESSAGE_ERROR_DIVISION_BY_ZERO);
   } else {
     isDivisionPerformed = false;
   }
@@ -30,10 +30,11 @@ function clearDisplay() {
   enableButtons();
 }
 
+// evaluates cotent of main display
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
   disableButtons();
-  document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_INVALID_ENTRY;
+  document.getElementById(ID_DISPLAY_INFO).value = $.i18n(MESSAGE_ERROR_INVALID_ENTRY);
   if (valueInserted) {
     nameCalculator.nameDisplayMain.value = eval(valueInserted);
     enableButtons();
@@ -52,6 +53,7 @@ function enableButtons() {
   changeButtonsDisabled(RCALC_BUTTON_OPERATOR, COLOR_WHITE, false);
 }
 
+// loops trough buttons and makes an action
 function changeButtonsDisabled(buttonsCssClass, color, disable) {
   var buttonsForDisable = document.getElementsByClassName(buttonsCssClass);
   for (var i = 0; i < buttonsForDisable.length; i++) {

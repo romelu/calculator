@@ -1,0 +1,25 @@
+{
+  "@metadata": {
+    "author": "Roman",
+    "locale": "en"
+  },
+  "calculator.title": "Calculator",
+  "calculator.h1": "Calculator by Roman",
+
+  "calculator.dropdown.button.color": "Color",
+  "calculator.dropdown.content.default.theme": "Default Theme",
+  "calculator.dropdown.content.sky.theme": "Sky Theme",
+  "calculator.dropdown.content.sand.theme": "Sand Theme",
+
+  "calculator.dropdown.button.size": "Size",
+  "calculator.dropdown.content.small": "Small",
+  "calculator.dropdown.content.default": "Default",
+  "calculator.dropdown.content.large": "Large",
+
+  "calculator.dropdown.button.language": "Language",
+  "calculator.dropdown.content.english": "English",
+  "calculator.dropdown.content.czech": "Czech",
+
+  "calculator.message.error.division.by.zero": "Can not devide by 0!\nClick C",
+  "calculator.message.error.invalid.entry": "Invalid entry!\nClick C"
+}

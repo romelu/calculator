@@ -88,9 +88,9 @@ h1 {
   cursor: pointer;
 }
 
-/* dropdown button */
+/* dropdown button color */
 
-.rcalc-dropdown-button {
+.rcalc-dropdown-button-color {
   background-color: #1c3968;
   color: #FFFFFF;
   font-weight: bold;
@@ -100,20 +100,70 @@ h1 {
   border: none;
 }
 
-/* the container <div> - needed to position the dropdown content */
+/* dropdown button size */
 
-.rcalc-dropdown {
+.rcalc-dropdown-button-size {
+  background-color: #1c3968;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/* dropdown button language */
+
+.rcalc-dropdown-button-language {
+  background-color: #1c3968;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/* the container <div> - needed to position the color dropdown content */
+
+.rcalc-dropdown-color {
   display: inline-block;
 }
 
-/* dropdown content (hidden by default) */
+/* the container <div> - needed to position the size dropdown content */
 
-.rcalc-dropdown-content {
+.rcalc-dropdown-size {
+  display: inline-block;
+}
+
+/* the container <div> - needed to position the language dropdown content */
+
+.rcalc-dropdown-language {
+  display: inline-block;
+}
+
+/* dropdown color content (hidden by default) */
+
+.rcalc-dropdown-content-color {
   display: none;
   position: absolute;
 }
 
-/* buttons inside the dropdown */
+/* dropdown size content (hidden by default) */
+
+.rcalc-dropdown-content-size {
+  display: none;
+  position: absolute;
+}
+
+/* dropdown language content (hidden by default) */
+
+.rcalc-dropdown-content-language {
+  display: none;
+  position: absolute;
+}
+
+/* buttons inside the color dropdown */
 
 .rcalc-button-css-swap {
   width: 100%;
@@ -127,15 +177,69 @@ h1 {
   cursor: pointer;
 }
 
-/* change color of dropdown buttons on hover */
+/* buttons inside the size dropdown */
+
+.rcalc-button-size-swap {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+/* buttons inside the language dropdown */
+
+.rcalc-button-language-swap {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: none;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+/* change color of dropdown color buttons on hover */
 
 .rcalc-button-css-swap:hover {
   background-color: #1c3968;
   color: #FFFFFF;
 }
 
-/* show the dropdown menu on hover */
+/* change color of dropdown size buttons on hover */
 
-.rcalc-dropdown:hover .rcalc-dropdown-content {
+.rcalc-button-size-swap:hover {
+  background-color: #1c3968;
+  color: #FFFFFF;
+}
+
+/* change color of dropdown language buttons on hover */
+
+.rcalc-button-language-swap:hover {
+  background-color: #1c3968;
+  color: #FFFFFF;
+}
+
+/* show the color dropdown menu on hover */
+
+.rcalc-dropdown-color:hover .rcalc-dropdown-content-color {
+  display: block;
+}
+
+/* show the size dropdown menu on hover */
+
+.rcalc-dropdown-size:hover .rcalc-dropdown-content-size {
+  display: block;
+}
+
+/* show the language dropdown menu on hover */
+
+.rcalc-dropdown-language:hover .rcalc-dropdown-content-language {
   display: block;
 }
