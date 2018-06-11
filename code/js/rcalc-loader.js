@@ -33,7 +33,7 @@ loadScript("../js/constant/rcalc-constant-html-css.js");
 loadScript("../js/constant/rcalc-constant-string-utility.js");
 loadScript("../js/constant/rcalc-constant-number-utility.js");
 loadScript("../js/constant/rcalc-constant-string-key-localization.js");
-loadScript("../js/constant/rcalc-constant-file-path.js");
+loadScript("../js/constant/rcalc-constant-enum-file-path.js");
 
 // rcalc functionalities
 loadScript("../js/rcalc-localization.js")﻿;
