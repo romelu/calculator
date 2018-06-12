@@ -36,11 +36,17 @@ function evaluateDisplay() {
   disableButtons();
   document.getElementById(ID_DISPLAY_INFO).value = $.i18n(MESSAGE_ERROR_INVALID_ENTRY);
   if (valueInserted) {
-    nameCalculator.nameDisplayMain.value = eval(valueInserted);
-    enableButtons();
-    document.getElementById(ID_DISPLAY_INFO).value = STRING_EMPTY;
-  }
-}﻿
+    var result = eval(valueInserted);
+    if (result == undefined) {
+      disableButtons();
+      document.getElementById(ID_DISPLAY_INFO).value = $.i18n(MESSAGE_ERROR_INVALID_ENTRY);
+    } else {
+      nameCalculator.nameDisplayMain.value = result;
+      enableButtons();
+      document.getElementById(ID_DISPLAY_INFO).value = STRING_EMPTY;
+    }
+  }﻿
+}
 
 // disables buttons (operands and operators)
 function disableButtons() {
