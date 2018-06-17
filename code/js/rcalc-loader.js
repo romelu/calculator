@@ -36,6 +36,7 @@ loadScript("../js/constant/string-key-localization-constant.js");
 loadScript("../js/constant/file-path-constant.js");
 
 // rcalc functionalities
+loadScript("../js/rcalc-log.js")﻿;
 loadScript("../js/rcalc-localization.js")﻿;
 loadScript("../js/rcalc-math.js")﻿;
 loadScript("../js/rcalc-theme.js")﻿;
