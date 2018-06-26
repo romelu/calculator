@@ -38,11 +38,17 @@ function evaluateDisplay() {
   disableButtons();
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_INVALID_ENTRY);
   if (valueInserted) {
-    nameCalculator.nameDisplayMain.value = eval(valueInserted);
-    enableButtons();
-    document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
-  }
-}﻿
+    var result = eval(valueInserted);
+    if (result == undefined) {
+      disableButtons();
+      document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_INVALID_ENTRY);
+    } else {
+      nameCalculator.nameDisplayMain.value = result;
+      enableButtons();
+      document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
+    }
+  }﻿
+}
 
 // disables buttons (operands and operators)
 function disableButtons() {
