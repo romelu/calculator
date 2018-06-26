@@ -2,7 +2,9 @@ var isDivisionPerformed = false;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
+  recordValue(inputValue);
   nameCalculator.nameDisplayMain.value = nameCalculator.nameDisplayMain.value + inputValue;
+
 }
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
