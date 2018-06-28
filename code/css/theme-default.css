@@ -9,6 +9,11 @@ h1 {
   color: #FFFFFF;
 }
 
+h2 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
 /* grid layout mobile*/
 
 .rcalc-grid {
@@ -20,7 +25,7 @@ h1 {
 
 .rcalc-container-log-display {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /* log display */
@@ -31,6 +36,22 @@ h1 {
   background-color: #ffffff;
   width: 268px;
   height: 393px;
+}
+
+/*  box for entire view - needed to position the content */
+
+.rcalc-container-view {
+  text-align: center;
+  background-color: #000000;
+}
+
+.rcalc-view-display {
+  resize: none;
+  border-style: solid;
+  background-color: #ffffff;
+  width: 268px;
+  height: 393px;
+  margin-top: 77px;
 }
 
 /* box for entire calculator - needed to position the content */
@@ -270,15 +291,9 @@ h1 {
   display: block;
 }
 
-/*  box for entire view - needed to position the content */
-
-.rcalc-container-view {
-  background-color: #ffffff;
-}
-
 /* grid layout desktop*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .rcalc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -289,6 +304,6 @@ h1 {
     background-color: #ffffff;
     width: 268px;
     height: 393px;
-    margin-top: 77px;
+    margin-top: 10px;
   }
 }

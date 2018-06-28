@@ -1,4 +1,9 @@
-function recordValue(inputValue) {
-  var xxx = nameCalculator.nameDisplayMain.value + inputValue;
-  document.getElementById("id-log-display").value = xxx + "=";
+var logDisplayValue;
+
+function logInput(operationInput) {
+  logDisplayValue = operationInput + "=" + eval(operationInput);
+}
+
+function showLog() {
+  document.getElementById("id-log-display").value = logDisplayValue;
 }
