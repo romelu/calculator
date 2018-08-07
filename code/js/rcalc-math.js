@@ -3,11 +3,12 @@ var isDivisionPerformed = false;
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
   nameCalculator.nameDisplayMain.value = nameCalculator.nameDisplayMain.value + inputValue;
+  document.getElementById("id-log-display").value = document.getElementById("id-log-display").value + inputValue;
 }
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
-  if (isDivisionPerformed && inputValue === NUMBER_UTILITY_CONST.NUMBER_ZERO) {
+  if (isDivisionPerformed && inputValue == NUMBER_UTILITY_CONST.NUMBER_ZERO) {
     disableButtons();
     document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_DIVISION_BY_ZERO);
   } else {
@@ -42,6 +43,7 @@ function evaluateDisplay() {
       document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_INVALID_ENTRY);
     } else {
       nameCalculator.nameDisplayMain.value = result;
+      setLogDisplayLine(result);
       enableButtons();
       document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
     }
