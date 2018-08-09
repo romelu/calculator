@@ -22,7 +22,7 @@ function setDisplayLineErrorCase(leftSideOfEqualSignGlobal) {
   var parentDiv = document.getElementById("id-container-log-display");
   var paragraph = document.createElement("p");
   var text;
-  paragraph.style.backgroundColor = "#f44242";
+  paragraph.style.backgroundColor = "#ff6666";
   paragraph.style.width = "268px";
   paragraph.style.margin = "0";
   paragraph.style.padding = "0";
