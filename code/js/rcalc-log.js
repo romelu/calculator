@@ -4,14 +4,16 @@ function setLogDisplayLine() {
   lineCounter++;
   var parentDiv = document.getElementById("id-container-log-display");
   var paragraph = document.createElement("p");
+  var text;
+  var nextToLastChild;
   paragraph.style.backgroundColor = "#adadad";
   paragraph.style.width = "268px";
   paragraph.style.margin = "0";
   paragraph.style.padding = "0";
-  var text = document.createTextNode(leftSideOfEqualSignGlobal + "=" + resultGlobal);
+  text = document.createTextNode(leftSideOfEqualSignGlobal + "=" + resultGlobal);
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
-  var nextToLastChild = parentDiv.lastChild.previousSibling;
+  nextToLastChild = parentDiv.lastChild.previousSibling;
   parentDiv.removeChild(nextToLastChild);
   changeLineColor(paragraph);
 }
@@ -19,11 +21,12 @@ function setLogDisplayLine() {
 function setDisplayLineErrorCase(leftSideOfEqualSignGlobal) {
   var parentDiv = document.getElementById("id-container-log-display");
   var paragraph = document.createElement("p");
+  var text;
   paragraph.style.backgroundColor = "#f44242";
   paragraph.style.width = "268px";
   paragraph.style.margin = "0";
   paragraph.style.padding = "0";
-  var text = document.createTextNode(leftSideOfEqualSignGlobal + " ERROR");
+  text = document.createTextNode(leftSideOfEqualSignGlobal + " ERROR");
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
 }
