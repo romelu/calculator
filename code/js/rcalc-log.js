@@ -5,8 +5,8 @@ function setLogDisplayLine() {
   var text = document.createTextNode(leftSideOfEqualSignGlobal + "=" + resultGlobal);
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
-  var lastChild = parentDiv.lastChild.previousSibling;
-  parentDiv.removeChild(lastChild);
+  var nextToLastChild = parentDiv.lastChild.previousSibling;
+  parentDiv.removeChild(nextToLastChild);
 }
 
 function setDisplayLineErrorCase(valueInserted) {
