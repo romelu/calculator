@@ -5,6 +5,7 @@
   },
   "calculator.title": "Calculator",
   "calculator.h1": "Calculator by Roman",
+  "calculator.h2": "Log Display",
 
   "calculator.dropdown.button.color": "Color",
   "calculator.dropdown.content.default.theme": "Default Theme",
