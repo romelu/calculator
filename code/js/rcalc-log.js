@@ -5,6 +5,9 @@ function setLogDisplayLine() {
   var parentDiv = document.getElementById("id-container-log-display");
   var paragraph = document.createElement("p");
   paragraph.style.backgroundColor = "#adadad";
+  paragraph.style.width = "268px";
+  paragraph.style.margin = "0";
+  paragraph.style.padding = "0";
   var text = document.createTextNode(leftSideOfEqualSignGlobal + "=" + resultGlobal);
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
@@ -17,6 +20,9 @@ function setDisplayLineErrorCase(leftSideOfEqualSignGlobal) {
   var parentDiv = document.getElementById("id-container-log-display");
   var paragraph = document.createElement("p");
   paragraph.style.backgroundColor = "#f44242";
+  paragraph.style.width = "268px";
+  paragraph.style.margin = "0";
+  paragraph.style.padding = "0";
   var text = document.createTextNode(leftSideOfEqualSignGlobal + " ERROR");
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
