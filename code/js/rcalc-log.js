@@ -9,11 +9,11 @@ function setLogDisplayLine() {
   parentDiv.removeChild(nextToLastChild);
 }
 
-function setDisplayLineErrorCase(valueInserted) {
+function setDisplayLineErrorCase(leftSideOfEqualSignGlobal) {
   var parentDiv = document.getElementById("id-container-log-display");
   var paragraph = document.createElement("p");
   paragraph.style.backgroundColor = "#f44242";
-  var text = document.createTextNode(valueInserted + " ERROR");
+  var text = document.createTextNode(leftSideOfEqualSignGlobal + " ERROR");
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
 }
