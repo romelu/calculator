@@ -5,13 +5,13 @@
   },
   "calculator.title": "Calculator",
   "calculator.h1": "Calculator by Roman",
-  "log.display.h1": "Log Display",
-  "view.h1": "Here Will Be A View",
+  "log.display.h1": "Log display",
+  "view.h1": "Here will be a view",
 
   "calculator.dropdown.button.color": "Color",
-  "calculator.dropdown.content.default.theme": "Default Theme",
-  "calculator.dropdown.content.sky.theme": "Sky Theme",
-  "calculator.dropdown.content.sand.theme": "Sand Theme",
+  "calculator.dropdown.content.default.theme": "Default theme",
+  "calculator.dropdown.content.sky.theme": "Sky theme",
+  "calculator.dropdown.content.sand.theme": "Sand theme",
 
   "calculator.dropdown.button.size": "Size",
   "calculator.dropdown.content.small": "Small",
