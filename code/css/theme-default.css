@@ -12,7 +12,7 @@ h1 {
 h2 {
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 
 /* grid layout mobile*/
@@ -38,10 +38,10 @@ h2 {
 .rcalc-view-display {
   resize: none;
   border-style: solid;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 268px;
   height: 390px;
-  margin-top: 81px;
+  margin-top: 80px;
 }
 
 /* box for entire calculator - needed to position the content */
@@ -286,14 +286,6 @@ h2 {
   .rcalc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  .rcalc-log-display {
-    resize: none;
-    border-style: solid;
-    background-color: #ffffff;
-    width: 268px;
-    height: 393px;
-    margin-top: 10px;
   }
   .rcalc-container-calculator {
     margin-bottom: 200px;
