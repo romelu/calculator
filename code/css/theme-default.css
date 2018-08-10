@@ -26,8 +26,23 @@ h1 {
 }
 
 .rcalc-log-display-line {
+  overflow: auto;
   margin: auto;
   padding: 0;
+}
+
+.rcalc-container-button-log-clear {
+  text-align: center;
+}
+
+.rcalc-button-log-clear {
+  background-color: #1c3968;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
 }
 
 /*  box for entire view - needed to position the content */

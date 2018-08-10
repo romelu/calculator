@@ -32,3 +32,10 @@ function changeLineColor(paragraph) {
     paragraph.style.backgroundColor = "#FFFFFF";
   }
 }
+
+function clearLog() {
+  var allChildren = document.getElementById("id-log-display");
+  while (allChildren.firstChild) {
+    allChildren.removeChild(allChildren.firstChild);
+  }
+}
