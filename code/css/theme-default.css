@@ -14,6 +14,10 @@ h2 {
   color: #FFFFFF;
 }
 
+.rcalc-container-log-display {
+  text-align: center;
+}
+
 /* grid layout mobile*/
 
 .rcalc-grid {
@@ -30,7 +34,7 @@ h2 {
 
 .rcalc-log-display-line {
   width: 268px;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
