@@ -7,9 +7,7 @@ function setLogDisplayLine() {
   var text;
   var nextToLastChild;
   paragraph.style.backgroundColor = "#adadad";
-  paragraph.style.width = "268px";
-  paragraph.style.margin = "0";
-  paragraph.style.padding = "0";
+  paragraph.setAttribute("class", "rcalc-log-display-line");
   text = document.createTextNode(leftSideOfEqualSignGlobal + "=" + resultGlobal);
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);
@@ -23,9 +21,7 @@ function setDisplayLineErrorCase(leftSideOfEqualSignGlobal) {
   var paragraph = document.createElement("p");
   var text;
   paragraph.style.backgroundColor = "#ff6666";
-  paragraph.style.width = "268px";
-  paragraph.style.margin = "0";
-  paragraph.style.padding = "0";
+  paragraph.setAttribute("class", "rcalc-log-display-line");
   text = document.createTextNode(leftSideOfEqualSignGlobal + " ERROR");
   paragraph.appendChild(text);
   parentDiv.appendChild(paragraph);

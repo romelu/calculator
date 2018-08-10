@@ -21,18 +21,17 @@ h2 {
   grid-template-columns: 1fr;
 }
 
-/* box for entire log display - needed to position the content */
-
-.rcalc-container-log-display {
-  text-align: center;
-  background-color: #e2d9b5;
-}
-
 /*  box for entire view - needed to position the content */
 
 .rcalc-container-view {
   text-align: center;
   background-color: #e2d9b5;
+}
+
+.rcalc-log-display-line {
+  width: 268px;
+  margin: 0;
+  padding: 0;
 }
 
 .rcalc-view-display {
@@ -48,7 +47,6 @@ h2 {
 
 .rcalc-container-calculator {
   text-align: center;
-  margin-bottom: 200px;
 }
 
 /* calculator form */
@@ -296,5 +294,8 @@ h2 {
     width: 268px;
     height: 393px;
     margin-top: 10px;
+  }
+  .rcalc-container-calculator {
+    margin-bottom: 200px;
   }
 }
