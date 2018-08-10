@@ -33,7 +33,7 @@ function clearDisplay() {
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = STRING_UTILITY_CONST.STRING_EMPTY;
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
   enableButtons();
-  leftSideOfEqualSignGlobal = "";
+  clearVarLeftSideOfEqualSignGlobal();
 }
 
 // evaluates cotent of main display

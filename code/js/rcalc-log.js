@@ -40,3 +40,7 @@ function clearLog() {
     allChildren.removeChild(allChildren.firstChild);
   }
 }
+
+function clearVarLeftSideOfEqualSignGlobal() {
+  leftSideOfEqualSignGlobal = "";
+}
