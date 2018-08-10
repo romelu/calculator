@@ -14,10 +14,6 @@ h2 {
   color: #FFFFFF;
 }
 
-.rcalc-container-log-display {
-  text-align: center;
-}
-
 /* grid layout mobile*/
 
 .rcalc-grid {
@@ -285,7 +281,7 @@ h2 {
 
 /* grid layout desktop*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   .rcalc-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
