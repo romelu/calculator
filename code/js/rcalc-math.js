@@ -14,7 +14,7 @@ function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == NUMBER_UTILITY_CONST.NUMBER_ZERO) {
     disableButtons();
     document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_DIVISION_BY_ZERO);
-    setDisplayLineErrorCase(leftSideOfEqualSignGlobal);
+    setDisplayLineErrorCase();
   } else {
     isDivisionPerformed = false;
   }
@@ -33,6 +33,7 @@ function clearDisplay() {
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = STRING_UTILITY_CONST.STRING_EMPTY;
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
   enableButtons();
+  leftSideOfEqualSignGlobal = "";
 }
 
 // evaluates cotent of main display

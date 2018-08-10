@@ -6,6 +6,7 @@
   "calculator.title": "Calculator",
   "calculator.h1": "Calculator by Roman",
   "log.display.h1": "Log display",
+  "log.display.button.clear": "Clear log",
   "view.h1": "Here will be a view",
 
   "calculator.dropdown.button.color": "Color",
