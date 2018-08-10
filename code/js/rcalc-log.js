@@ -16,7 +16,7 @@ function setLogDisplayLine() {
   changeLineColor(paragraph);
 }
 
-function setDisplayLineErrorCase(leftSideOfEqualSignGlobal) {
+function setDisplayLineErrorCase() {
   var parentDiv = document.getElementById("id-log-display");
   var paragraph = document.createElement("p");
   var text;
@@ -34,6 +34,7 @@ function changeLineColor(paragraph) {
 }
 
 function clearLog() {
+  lineCounter = 0;
   var allChildren = document.getElementById("id-log-display");
   while (allChildren.firstChild) {
     allChildren.removeChild(allChildren.firstChild);
