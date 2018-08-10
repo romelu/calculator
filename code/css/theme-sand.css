@@ -12,6 +12,7 @@ h1 {
 h2 {
   text-align: center;
   color: #000000;
+  margin-bottom: 32px;
 }
 
 /* grid layout mobile*/
