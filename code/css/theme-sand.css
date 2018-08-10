@@ -16,6 +16,20 @@ h1 {
   grid-template-columns: 1fr;
 }
 
+.rcalc-log-display {
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: auto;
+  background-color: #FFFFFF;
+  width: 268px;
+  height: 392px;
+}
+
+.rcalc-log-display-line {
+  margin: auto;
+  padding: 0;
+}
+
 /*  box for entire view - needed to position the content */
 
 .rcalc-container-view {
@@ -23,18 +37,12 @@ h1 {
   background-color: #e2d9b5;
 }
 
-.rcalc-log-display-line {
-  width: 268px;
-  margin: auto;
-  padding: 0;
-}
-
 .rcalc-view-display {
   border: none;
   resize: none;
   background-color: #FFFFFF;
   width: 268px;
-  height: 388px;
+  height: 392px;
 }
 
 /* box for entire calculator - needed to position the content */
