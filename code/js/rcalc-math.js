@@ -39,7 +39,7 @@ function clearDisplay() {
 // evaluates cotent of main display
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
-  setDisplayLineErrorCase(leftSideOfEqualSignGlobal);
+  setDisplayLineErrorCase();
   disableButtons();
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_INVALID_ENTRY);
   if (valueInserted) {
