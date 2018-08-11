@@ -4,8 +4,8 @@ var resultGlobal;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
-  var leftSideOfEqualSign = document.getElementById("id-display-main").value + inputValue;
-  document.getElementById("id-display-main").value = leftSideOfEqualSign;
+  var leftSideOfEqualSign = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value + inputValue;
+  document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = leftSideOfEqualSign;
   leftSideOfEqualSignGlobal = leftSideOfEqualSign;
 }
 
