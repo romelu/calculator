@@ -24,5 +24,6 @@
   "calculator.dropdown.content.czech": "Čeština",
 
   "calculator.message.error.division.by.zero": "Nulou nelze dělit!\nKlikněte C",
-  "calculator.message.error.invalid.entry": "Neplatný vstup!\nKlikněte C"
+  "calculator.message.error.invalid.entry": "Neplatný vstup!\nKlikněte C",
+  "calculator.message.error": "CHYBA"
 }

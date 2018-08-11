@@ -17,6 +17,7 @@ h1 {
 }
 
 .rcalc-log-display {
+  font-size: 20px;
   overflow-x: auto;
   overflow-y: auto;
   margin: auto;
@@ -39,7 +40,7 @@ h1 {
   background-color: #474024;
   color: #FFFFFF;
   font-weight: bold;
-  margin-top: 27px;
+  margin-top: 29px;
   padding: 5px;
   font-size: 20px;
   border: none;

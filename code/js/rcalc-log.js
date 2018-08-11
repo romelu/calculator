@@ -1,14 +1,14 @@
-var lineCounter = 0;
+var lineCounter = NUMBER_UTILITY_CONST.NUMBER_ZERO;
 
 function setLogDisplayLine() {
   lineCounter++;
-  var parentDiv = document.getElementById("id-log-display");
+  var parentDiv = document.getElementById(HTML_ID_CONST.ID_LOG_DISPLAY);
   var paragraph = document.createElement("p");
   var text;
   var nextToFirstChild;
-  paragraph.style.backgroundColor = "#adadad";
-  paragraph.setAttribute("class", "rcalc-log-display-line");
-  text = document.createTextNode(leftSideOfEqualSignGlobal + "=" + resultGlobal);
+  paragraph.style.backgroundColor = HTML_CSS_CONST.COLOR_LIGHT_GREY;
+  paragraph.setAttribute("class", HTML_CLASS_CONST.RCALC_LOG_DISPLAY_LINE);
+  text = document.createTextNode(leftSideOfEqualSignGlobal + STRING_UTILITY_CONST.EQUALS_SIGN + resultGlobal);
   paragraph.appendChild(text);
   parentDiv.insertBefore(paragraph, parentDiv.firstChild);
   nextToFirstChild = parentDiv.firstChild.nextSibling;
@@ -17,30 +17,30 @@ function setLogDisplayLine() {
 }
 
 function setDisplayLineErrorCase() {
-  var parentDiv = document.getElementById("id-log-display");
+  var parentDiv = document.getElementById(HTML_ID_CONST.ID_LOG_DISPLAY);
   var paragraph = document.createElement("p");
   var text;
-  paragraph.style.backgroundColor = "#ff6666";
-  paragraph.setAttribute("class", "rcalc-log-display-line");
-  text = document.createTextNode(leftSideOfEqualSignGlobal + "ERROR");
+  paragraph.style.backgroundColor = HTML_CSS_CONST.COLOR_LIGHT_RED;
+  paragraph.setAttribute("class", HTML_CLASS_CONST.RCALC_LOG_DISPLAY_LINE);
+  text = document.createTextNode(leftSideOfEqualSignGlobal + $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR));
   paragraph.appendChild(text);
   parentDiv.insertBefore(paragraph, parentDiv.firstChild);
 }
 
 function changeLineColor(paragraph) {
-  if (lineCounter % 2 == 1) {
-    paragraph.style.backgroundColor = "#FFFFFF";
+  if (lineCounter % 2 === 1) {
+    paragraph.style.backgroundColor = HTML_CSS_CONST.COLOR_WHITE;
   }
 }
 
 function clearLog() {
-  lineCounter = 0;
-  var allChildren = document.getElementById("id-log-display");
+  lineCounter = NUMBER_UTILITY_CONST.NUMBER_ZERO;
+  var allChildren = document.getElementById(HTML_ID_CONST.ID_LOG_DISPLAY);
   while (allChildren.firstChild) {
     allChildren.removeChild(allChildren.firstChild);
   }
 }
 
 function clearVarLeftSideOfEqualSignGlobal() {
-  leftSideOfEqualSignGlobal = "";
+  leftSideOfEqualSignGlobal = STRING_UTILITY_CONST.STRING_EMPTY;
 }

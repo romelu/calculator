@@ -24,5 +24,6 @@
   "calculator.dropdown.content.czech": "Czech",
 
   "calculator.message.error.division.by.zero": "Can not devide by 0!\nClick C",
-  "calculator.message.error.invalid.entry": "Invalid entry!\nClick C"
+  "calculator.message.error.invalid.entry": "Invalid entry!\nClick C",
+  "calculator.message.error": "ERROR"
 }

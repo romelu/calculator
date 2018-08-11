@@ -1,5 +1,5 @@
 var isDivisionPerformed = false;
-var leftSideOfEqualSignGlobal;
+var leftSideOfEqualSignGlobal = STRING_UTILITY_CONST.STRING_EMPTY;
 var resultGlobal;
 
 // displays numerous inputs (numbers) on the screen
