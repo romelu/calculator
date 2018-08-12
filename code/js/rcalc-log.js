@@ -44,3 +44,5 @@ function clearLog() {
 function clearVarLeftSideOfEqualSignGlobal() {
   leftSideOfEqualSignGlobal = STRING_UTILITY_CONST.STRING_EMPTY;
 }
+
+$('body').children('div').last().remove();
