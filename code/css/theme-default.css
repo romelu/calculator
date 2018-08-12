@@ -305,7 +305,4 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .rcalc-container-calculator {
-    margin-bottom: 200px;
-  }
 }
