@@ -1,4 +1,3 @@
-var isSecondPressed = false;
 var collectionOfKeys = [];
 var nextToLastCharacter;
 
@@ -6,102 +5,61 @@ document.addEventListener("keyup", function(event) {
   if (event.defaultPrevented) {
     return;
   }
+
   var key = event.key;
   collectionOfKeys.push(key);
+
+  // next to last char from an array as this is an index we target it by -2
   nextToLastCharacter = collectionOfKeys[collectionOfKeys.length - 2];
   switch (key) {
-    case "0":
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_0:
       testZero(key);
       break;
-    case "1":
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_1:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_2:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_3:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_4:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_5:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_6:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_7:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_8:
+    case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_9:
+    case STRING_KEY_KEYPRESS_CONST.KEY_DOT:
       displayNumber(key);
       break;
-    case "2":
-      displayNumber(key);
-      break;
-    case "3":
-      displayNumber(key);
-      break;
-    case "4":
-      displayNumber(key);
-      break;
-    case "5":
-      displayNumber(key);
-      break;
-    case "6":
-      displayNumber(key);
-      break;
-    case "7":
-      displayNumber(key);
-      break;
-    case "8":
-      displayNumber(key);
-      break;
-    case "9":
-      displayNumber(key);
-      break;
-    case ".":
-      displayNumber(key);
-      break;
-    case "p":
-      setBoolean();
-      break;
-    case "l":
+    case STRING_KEY_KEYPRESS_CONST.KEY_L:
+    case STRING_KEY_KEYPRESS_CONST.KEY_U:
+    case STRING_KEY_KEYPRESS_CONST.KEY_I:
       testCharacter(key);
       break;
-    case "m":
-      setBoolean();
-      break;
-    case "i":
-      testCharacter(key);
-      break;
-    case "u":
-      testCharacter(key);
-      break;
-    case "d":
-      setBoolean();
-      break;
-    case "i":
-      testCharacter(key);
-      break;
-    case "e":
+    case STRING_KEY_KEYPRESS_CONST.KEY_E:
       evaluateDisplay();
       break;
-    case "c":
+    case STRING_KEY_KEYPRESS_CONST.KEY_C:
       clearDisplay();
       break;
   }
 });
 
-function removeExtraZero() {
-  var diplayValue = document.getElementById("id-display-main").value;
-  diplayValue = diplayValue.slice(0, -1);
-  document.getElementById("id-display-main").value = diplayValue;
-}
-
-function setBoolean() {
-  isSecondPressed = true;
+function removeExtraCharacter() {
+  var displayValue = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value;
+  displayValue = displayValue.slice(0, -1);
+  document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = displayValue;
 }
 
 function testCharacter(key) {
-  if (nextToLastCharacter == "p" && key == "l" && isSecondPressed == true) {
+  if (nextToLastCharacter == "p" && key == "l") {
     displayNumber("+");
-    isSecondPressed = false;
   }
-  if (nextToLastCharacter == "m" && key == "i" && isSecondPressed == true) {
+  if (nextToLastCharacter == "m" && key == "i") {
     displayNumber("-");
-    isSecondPressed = false;
   }
-  if (nextToLastCharacter == "m" && key == "u" && isSecondPressed == true) {
+  if (nextToLastCharacter == "m" && key == "u") {
     displayNumber("*");
-    isSecondPressed = false;
   }
-  if (nextToLastCharacter == "d" && key == "i" && isSecondPressed == true) {
+  if (nextToLastCharacter == "d" && key == "i") {
     displayNumber("/");
     setWarning(key);
-    removeExtraZero();
-    isSecondPressed = false;
-  } else {
-    isSecondPressed = false;
+    removeExtraCharacter();
   }
 }

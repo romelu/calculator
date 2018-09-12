@@ -27,6 +27,7 @@ loadScript("../js/ext-lib/history/jquery.history.min.js");
 loadScript("../js/ext-lib/url/url.min.js");
 
 // rcalc constants
+loadScript("../js/constant/string-key-keypress-constant.js");
 loadScript("../js/constant/html-class-constant.js");
 loadScript("../js/constant/html-id-constant.js");
 loadScript("../js/constant/html-css-constant.js");
