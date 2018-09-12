@@ -1,23 +1,282 @@
+/* selects all elements, used to normalize default settings for better cross-browser styling */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* selects the body element, used to unify background */
+
 body {
-  background-color: #000000;
+  font-size: 0;
+  background-color: #ffffff;
 }
 
 h1 {
+  font-size: 30px;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+h3 {
+  width: auto;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.rcalr-contact-mail {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.rcalc-index-certificate-box {
+  display: block;
+}
+
+.rcalc-index-certificate {
+  width: 100%;
+  height: auto;
+}
+
+.rcalc-index-square {
+  display: table;
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+
+.rcalc-index-square p {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* HEADER mobile */
+
+header {
+  margin: 10px 0;
+  background-color: #000000;
+  width: 100%;
+  height: 50px;
+}
+
+header nav .rcalc-nav-sandwich {
+  display: inline-block;
+  float: left;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin: 9px;
+}
+
+.rcalc-nav-button-container {
+  margin-top: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+header nav ul {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  margin: auto;
+  width: 100%;
+  height: 0;
+}
+
+header nav ul.open {
+  height: auto;
+}
+
+header nav ul li {
+  float: none;
+  list-style: none;
+  line-height: 50px;
+}
+
+header nav ul li a {
+  padding-left: 11px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.rcalc-language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.rcalc-language-switcher-button {
+  padding: 0 7px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+
+.rcalc-language-switcher-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rcalc-language-swictcher-content {
+  width: 100%;
+  display: none;
+}
+
+.rcalc-language-switcher-swap {
+  text-align: center;
+  line-height: 33px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 7px;
+  color: #ffffff;
+  background-color: #000000;
+  display: block;
+}
+
+.rcalc-language-switcher:hover .rcalc-language-swictcher-content {
+  display: block;
+  position: absolute;
+}
+
+.rcalc-language-switcher-swap:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* HEADER desktop */
+
+@media only screen and (min-width: 1000px) {
+  header nav .rcalc-nav-sandwich {
+    display: none;
+  }
+  header nav ul {
+    display: table;
+    background-color: none;
+    width: auto;
+  }
+  header nav ul li {
+    display: block;
+    float: left;
+  }
+  header nav ul li a {
+    padding: 0 25px;
+    line-height: 50px;
+    text-align: center;
+  }
+  h3 {
+    width: 400px;
+  }
+  .rcalc-nav-button-container {
+    position: static;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .rcalc-index-banner {
+    height: 450px !important;
+  }
+  .rcalc-contact-banner {
+    height: 450px !important;
+  }
+  .rcalc-main-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .rcalc-index-certificate-box {
+    margin-top: 10px;
+  }
+  .rcalc-index-certificate {
+    height: 340px;
+    width: 60%;
+  }
+  .rcalc-index-square {
+    float: right;
+    width: 39%;
+    height: 340px;
+  }
+}
+
+.rcalc-index-banner {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: table;
+  background-image: url("../image/wisdom.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rcalc-contact-banner {
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: table;
+  background-image: url("../image/contact.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rcalc-banner-vertical-center {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* box for entire calculator - needed to position the content */
 
 .rcalc-container {
+  margin-top: 10px;
   text-align: center;
-  margin-bottom: 200px;
 }
 
 /* calculator form */
 
 .rcalc-calculator {
-  background-color: #F0F8FF;
+  border-radius: 20px;
+  background-color: #000000;
   display: inline-block;
   padding: 2px;
 }
@@ -25,6 +284,7 @@ h1 {
 /* clear button */
 
 .rcalc-button-clear {
+  border-radius: 20px;
   background-color: #681c1c;
   border: none;
   color: #FFFFFF;
@@ -37,6 +297,7 @@ h1 {
 /* result display */
 
 .rcalc-display-main {
+  border-radius: 20px;
   text-align: right;
   border-style: solid;
   border-color: #1c3968;
@@ -50,6 +311,7 @@ h1 {
 /* error display */
 
 .rcalc-display-info {
+  border-radius: 20px;
   resize: none;
   display: block;
   text-align: center;
@@ -67,6 +329,7 @@ h1 {
 /* all buttons of calculator accept C and operators */
 
 .rcalc-button {
+  border-radius: 20px;
   border: none;
   color: #FFFFFF;
   background-color: #1c3968;
@@ -79,6 +342,7 @@ h1 {
 /* operator buttons*/
 
 .rcalc-button-operator {
+  border-radius: 20px;
   border: none;
   color: #FFFFFF;
   background-color: #39681c;
@@ -91,10 +355,11 @@ h1 {
 /* dropdown button color */
 
 .rcalc-dropdown-button-color {
+  font-family: "Times New Roman", Times, serif;
   background-color: #1c3968;
   color: #FFFFFF;
+  cursor: pointer;
   font-weight: bold;
-  margin-top: 25px;
   padding: 5px;
   font-size: 20px;
   border: none;
@@ -103,10 +368,11 @@ h1 {
 /* dropdown button size */
 
 .rcalc-dropdown-button-size {
+  font-family: "Times New Roman", Times, serif;
   background-color: #1c3968;
   color: #FFFFFF;
+  cursor: pointer;
   font-weight: bold;
-  margin-top: 25px;
   padding: 5px;
   font-size: 20px;
   border: none;
@@ -115,10 +381,11 @@ h1 {
 /* dropdown button language */
 
 .rcalc-dropdown-button-language {
+  font-family: "Times New Roman", Times, serif;
   background-color: #1c3968;
   color: #FFFFFF;
+  cursor: pointer;
   font-weight: bold;
-  margin-top: 25px;
   padding: 5px;
   font-size: 20px;
   border: none;
@@ -127,18 +394,21 @@ h1 {
 /* the container <div> - needed to position the color dropdown content */
 
 .rcalc-dropdown-color {
+  margin: 25px 5px 0 5px;
   display: inline-block;
 }
 
 /* the container <div> - needed to position the size dropdown content */
 
 .rcalc-dropdown-size {
+  margin: 25px 5px 0 5px;
   display: inline-block;
 }
 
 /* the container <div> - needed to position the language dropdown content */
 
 .rcalc-dropdown-language {
+  margin: 25px 5px 0 5px;
   display: inline-block;
 }
 
@@ -166,8 +436,10 @@ h1 {
 /* buttons inside the color dropdown */
 
 .rcalc-button-css-swap {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -180,8 +452,10 @@ h1 {
 /* buttons inside the size dropdown */
 
 .rcalc-button-size-swap {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -194,8 +468,9 @@ h1 {
 /* buttons inside the language dropdown */
 
 .rcalc-button-language-swap {
+  font-size: 16px;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
