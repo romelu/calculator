@@ -21,7 +21,7 @@ h1 {
   overflow-x: auto;
   overflow-y: auto;
   margin: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 268px;
   height: 392px;
 }
@@ -38,7 +38,7 @@ h1 {
 
 .rcalc-button-log-clear {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 29px;
   padding: 5px;
@@ -56,7 +56,7 @@ h1 {
 .rcalc-view-display {
   border: none;
   resize: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 268px;
   height: 392px;
 }
@@ -81,7 +81,7 @@ h1 {
 .rcalc-button-clear {
   background-color: #681c1c;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 40px;
   width: 60px;
   height: 60px;
@@ -95,7 +95,7 @@ h1 {
   border-style: solid;
   border-color: #727555;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 40px;
   width: 186px;
   height: 55px;
@@ -111,8 +111,8 @@ h1 {
   border-color: #727555;
   border-width: 2px;
   font-weight: bold;
-  color: #FF0000;
-  background-color: #FFFFFF;
+  color: #ff0000;
+  background-color: #ffffff;
   font-size: 17px;
   width: 250px;
   height: 55px;
@@ -122,7 +122,7 @@ h1 {
 
 .rcalc-button {
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #727555;
   font-size: 40px;
   width: 60px;
@@ -135,7 +135,7 @@ h1 {
 
 .rcalc-button-operator {
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #39681c;
   font-size: 40px;
   width: 60px;
@@ -147,7 +147,7 @@ h1 {
 
 .rcalc-dropdown-button-color {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 25px;
   padding: 5px;
@@ -159,7 +159,7 @@ h1 {
 
 .rcalc-dropdown-button-size {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 25px;
   padding: 5px;
@@ -171,7 +171,7 @@ h1 {
 
 .rcalc-dropdown-button-language {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 25px;
   padding: 5px;
@@ -222,7 +222,7 @@ h1 {
 
 .rcalc-button-css-swap {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -236,7 +236,7 @@ h1 {
 
 .rcalc-button-size-swap {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -250,7 +250,7 @@ h1 {
 
 .rcalc-button-language-swap {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -264,21 +264,21 @@ h1 {
 
 .rcalc-button-css-swap:hover {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* change color of dropdown size buttons on hover */
 
 .rcalc-button-size-swap:hover {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* change color of dropdown language buttons on hover */
 
 .rcalc-button-language-swap:hover {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* show the color dropdown menu on hover */

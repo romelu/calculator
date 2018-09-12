@@ -34,7 +34,7 @@ loadScript("../js/constant/string-utility-constant.js");
 loadScript("../js/constant/number-utility-constant.js");
 loadScript("../js/constant/string-key-localization-constant.js");
 loadScript("../js/constant/file-path-constant.js");
-loadScript("../js/constant/string-attribute-element-constant.js");
+loadScript("../js/constant/html-element-attribute-constant.js");
 
 // rcalc functionalities
 loadScript("../js/rcalc-log.js")﻿;

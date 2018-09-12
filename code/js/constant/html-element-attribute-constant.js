@@ -1,4 +1,4 @@
-const STRING_ATTRIBUTE_ELEMENT_CONST = {
+const HTML_ELEMENT_ATTRIBUTE_CONST = {
   // attributes
   ATTRIBUTE_CLASS: "class",
 
