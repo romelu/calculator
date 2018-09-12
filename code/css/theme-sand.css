@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #e2d9b5;
 }
 
@@ -7,11 +9,63 @@ h1 {
   color: #000000;
 }
 
+/* grid layout mobile*/
+
+.rcalc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rcalc-log-display {
+  font-size: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: auto;
+  background-color: #ffffff;
+  width: 268px;
+  height: 392px;
+}
+
+.rcalc-log-display-line {
+  overflow: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.rcalc-container-button-log-clear {
+  text-align: center;
+}
+
+.rcalc-button-log-clear {
+  background-color: #474024;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 29px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+}
+
+/*  box for entire view - needed to position the content */
+
+.rcalc-container-view {
+  text-align: center;
+  background-color: #e2d9b5;
+}
+
+.rcalc-view-display {
+  border: none;
+  resize: none;
+  background-color: #ffffff;
+  width: 268px;
+  height: 392px;
+}
+
 /* box for entire calculator - needed to position the content */
 
-.rcalc-container {
+.rcalc-container-calculator {
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 }
 
 /* calculator form */
@@ -27,7 +81,7 @@ h1 {
 .rcalc-button-clear {
   background-color: #681c1c;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 40px;
   width: 60px;
   height: 60px;
@@ -41,7 +95,7 @@ h1 {
   border-style: solid;
   border-color: #727555;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 40px;
   width: 186px;
   height: 55px;
@@ -57,8 +111,8 @@ h1 {
   border-color: #727555;
   border-width: 2px;
   font-weight: bold;
-  color: #FF0000;
-  background-color: #FFFFFF;
+  color: #ff0000;
+  background-color: #ffffff;
   font-size: 17px;
   width: 250px;
   height: 55px;
@@ -68,7 +122,7 @@ h1 {
 
 .rcalc-button {
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #727555;
   font-size: 40px;
   width: 60px;
@@ -81,7 +135,7 @@ h1 {
 
 .rcalc-button-operator {
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #39681c;
   font-size: 40px;
   width: 60px;
@@ -93,7 +147,7 @@ h1 {
 
 .rcalc-dropdown-button-color {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 25px;
   padding: 5px;
@@ -105,7 +159,7 @@ h1 {
 
 .rcalc-dropdown-button-size {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 25px;
   padding: 5px;
@@ -117,7 +171,7 @@ h1 {
 
 .rcalc-dropdown-button-language {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin-top: 25px;
   padding: 5px;
@@ -168,7 +222,7 @@ h1 {
 
 .rcalc-button-css-swap {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -182,7 +236,7 @@ h1 {
 
 .rcalc-button-size-swap {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -196,7 +250,7 @@ h1 {
 
 .rcalc-button-language-swap {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
   color: #000000;
   padding: 5px;
@@ -210,21 +264,21 @@ h1 {
 
 .rcalc-button-css-swap:hover {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* change color of dropdown size buttons on hover */
 
 .rcalc-button-size-swap:hover {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* change color of dropdown language buttons on hover */
 
 .rcalc-button-language-swap:hover {
   background-color: #474024;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* show the color dropdown menu on hover */
@@ -243,4 +297,13 @@ h1 {
 
 .rcalc-dropdown-language:hover .rcalc-dropdown-content-language {
   display: block;
+}
+
+/* grid layout desktop*/
+
+@media screen and (min-width: 945px) {
+  .rcalc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
