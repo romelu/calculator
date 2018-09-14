@@ -152,6 +152,7 @@ header nav ul li a:hover {
 /* H attributes mobile */
 
 h1 {
+  margin-bottom: 10px;
   font-size: 30px;
   text-align: center;
   color: #000000;
@@ -280,11 +281,70 @@ h3 {
   }
 }
 
+/* grid layout mobile*/
+
+.rcalc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rcalc-log-display {
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  font-size: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: auto;
+  background-color: #ffffff;
+  width: 262px;
+  height: 377px;
+}
+
+.rcalc-log-display-line {
+  overflow: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.rcalc-container-button-log-clear {
+  text-align: center;
+}
+
+.rcalc-button-log-clear {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #1c3968;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/*  box for entire view - needed to position the content */
+
+.rcalc-container-view {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.rcalc-view-display {
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  resize: none;
+  background-color: #ffffff;
+  width: 262px;
+  height: 377px;
+}
+
 /* box for entire calculator - needed to position the content */
 
-.rcalc-container {
-  margin-top: 10px;
+.rcalc-container-calculator {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 /* calculator form */
@@ -354,7 +414,7 @@ h3 {
   cursor: pointer;
 }
 
-/* operator buttons*/
+/* operator buttons */
 
 .rcalc-button-operator {
   border-radius: 20px;
@@ -532,4 +592,13 @@ h3 {
 
 .rcalc-dropdown-language:hover .rcalc-dropdown-content-language {
   display: block;
+}
+
+/* grid layout desktop*/
+
+@media only screen and (min-width: 1000px) {
+  .rcalc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

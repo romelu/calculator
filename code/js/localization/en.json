@@ -23,11 +23,14 @@
 
   "calculator.title": "Calculator",
   "calculator.h1": "Calculator by Roman",
+  "log.display.h1": "Log display",
+  "log.display.button.clear": "Clear log",
+  "view.h1": "Here will be a view",
 
   "calculator.dropdown.button.color": "Color",
-  "calculator.dropdown.content.default.theme": "Default Theme",
-  "calculator.dropdown.content.sky.theme": "Sky Theme",
-  "calculator.dropdown.content.sand.theme": "Sand Theme",
+  "calculator.dropdown.content.default.theme": "Default theme",
+  "calculator.dropdown.content.sky.theme": "Sky theme",
+  "calculator.dropdown.content.sand.theme": "Sand theme",
 
   "calculator.dropdown.button.size": "Size",
   "calculator.dropdown.content.small": "Small",
@@ -39,5 +42,6 @@
   "calculator.dropdown.content.czech": "Czech",
 
   "calculator.message.error.division.by.zero": "Can not devide by 0!\nClick C",
-  "calculator.message.error.invalid.entry": "Invalid entry!\nClick C"
+  "calculator.message.error.invalid.entry": "Invalid entry!\nClick C",
+  "calculator.message.error": "ERROR"
 }

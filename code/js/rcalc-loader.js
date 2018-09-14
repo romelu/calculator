@@ -27,6 +27,7 @@ loadScript("../js/ext-lib/history/jquery.history.min.js");
 loadScript("../js/ext-lib/url/url.min.js");
 
 // rcalc constants
+loadScript("../js/constant/string-key-keypress-constant.js");
 loadScript("../js/constant/html-class-constant.js");
 loadScript("../js/constant/html-id-constant.js");
 loadScript("../js/constant/html-css-constant.js");
@@ -34,9 +35,12 @@ loadScript("../js/constant/string-utility-constant.js");
 loadScript("../js/constant/number-utility-constant.js");
 loadScript("../js/constant/string-key-localization-constant.js");
 loadScript("../js/constant/file-path-constant.js");
+loadScript("../js/constant/html-element-attribute-constant.js");
 
 // rcalc functionalities
 loadScript("../js/rcalc-sandwich.js")﻿;
+loadScript("../js/rcalc-log.js")﻿;
+loadScript("../js/rcalc-keypress.js")﻿;
 loadScript("../js/rcalc-localization.js")﻿;
 loadScript("../js/rcalc-math.js")﻿;
 loadScript("../js/rcalc-theme.js")﻿;

@@ -22,7 +22,10 @@
   "contact.h2": "Kontaktuj mě",
 
   "calculator.title": "Kalkulačka",
-  "calculator.h1": "Romanova Kalkulačka",
+  "calculator.h1": "Romanova kalkulačka",
+  "log.display.h1": "Log obrazovka",
+  "log.display.button.clear": "Vyčisti obrazovku",
+  "view.h1": "Tady bude náhled",
 
   "calculator.dropdown.button.color": "Barva",
   "calculator.dropdown.content.default.theme": "Výchozí téma",
@@ -39,5 +42,6 @@
   "calculator.dropdown.content.czech": "Čeština",
 
   "calculator.message.error.division.by.zero": "Nulou nelze dělit!\nKlikněte C",
-  "calculator.message.error.invalid.entry": "Neplatný vstup!\nKlikněte C"
+  "calculator.message.error.invalid.entry": "Neplatný vstup!\nKlikněte C",
+  "calculator.message.error": "CHYBA"
 }
