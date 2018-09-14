@@ -6,77 +6,11 @@
   padding: 0;
 }
 
-/* selects the body element, used to unify background */
+/* selects the body element, used to unification */
 
 body {
   font-size: 0;
   background-color: #ffffff;
-}
-
-h1 {
-  font-size: 30px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-h2 {
-  line-height: 60px;
-  font-size: 40px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px #000000;
-}
-
-h3 {
-  width: auto;
-  margin: 0 auto;
-  line-height: 40px;
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #000000;
-}
-
-.rcalr-contact-mail {
-  font-weight: bold;
-  text-decoration: underline;
-  margin: 0 auto;
-  line-height: 40px;
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #000000;
-}
-
-.rcalc-index-certificate-box {
-  display: block;
-}
-
-.rcalc-index-certificate {
-  width: 100%;
-  height: auto;
-}
-
-.rcalc-index-square {
-  display: table;
-  width: 100%;
-  height: auto;
-  background-color: #000000;
-}
-
-.rcalc-index-square p {
-  display: table-cell;
-  vertical-align: middle;
-  line-height: 50px;
-  color: #ffffff;
-  font-size: 25px;
-  text-align: center;
 }
 
 /* HEADER mobile */
@@ -161,7 +95,8 @@ header nav ul li a:hover {
 }
 
 .rcalc-language-swictcher-content {
-  width: 100%;
+  min-width: 100%;
+  right: 0;
   display: none;
 }
 
@@ -207,37 +142,53 @@ header nav ul li a:hover {
     line-height: 50px;
     text-align: center;
   }
-  h3 {
-    width: 400px;
-  }
   .rcalc-nav-button-container {
     position: static;
     width: 1000px;
     margin: 0 auto;
   }
-  .rcalc-index-banner {
-    height: 450px !important;
-  }
-  .rcalc-contact-banner {
-    height: 450px !important;
-  }
-  .rcalc-main-wrapper {
-    width: 1000px;
-    margin: 0 auto;
-  }
-  .rcalc-index-certificate-box {
-    margin-top: 10px;
-  }
-  .rcalc-index-certificate {
-    height: 340px;
-    width: 60%;
-  }
-  .rcalc-index-square {
-    float: right;
-    width: 39%;
-    height: 340px;
+}
+
+/* H attributes mobile */
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+h3 {
+  width: auto;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+/* H attributes desktop */
+
+@media only screen and (min-width: 1000px) {
+  h3 {
+    width: 400px;
   }
 }
+
+/* PAGE CONTENT mobile */
 
 .rcalc-index-banner {
   width: 100%;
@@ -265,6 +216,70 @@ header nav ul li a:hover {
   vertical-align: middle;
 }
 
+.rcalc-index-certificate-box {
+  display: block;
+}
+
+.rcalc-index-certificate {
+  width: 100%;
+  height: auto;
+}
+
+.rcalc-index-square {
+  display: table;
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+
+.rcalc-index-square p {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.rcalr-contact-mail {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+/* PAGE CONTENT desktop */
+
+@media only screen and (min-width: 1000px) {
+  .rcalc-main-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .rcalc-index-banner {
+    height: 450px !important;
+  }
+  .rcalc-contact-banner {
+    height: 450px !important;
+  }
+  .rcalc-index-certificate-box {
+    margin-top: 10px;
+  }
+  .rcalc-index-certificate {
+    height: 340px;
+    width: 60%;
+  }
+  .rcalc-index-square {
+    float: right;
+    width: 39%;
+    height: 340px;
+  }
+}
+
 /* box for entire calculator - needed to position the content */
 
 .rcalc-container {
@@ -287,7 +302,7 @@ header nav ul li a:hover {
   border-radius: 20px;
   background-color: #681c1c;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 40px;
   width: 60px;
   height: 60px;
@@ -302,7 +317,7 @@ header nav ul li a:hover {
   border-style: solid;
   border-color: #1c3968;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 40px;
   width: 186px;
   height: 55px;
@@ -319,8 +334,8 @@ header nav ul li a:hover {
   border-color: #1c3968;
   border-width: 2px;
   font-weight: bold;
-  color: #FF0000;
-  background-color: #FFFFFF;
+  color: #ff0000;
+  background-color: #ffffff;
   font-size: 17px;
   width: 250px;
   height: 55px;
@@ -331,7 +346,7 @@ header nav ul li a:hover {
 .rcalc-button {
   border-radius: 20px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #1c3968;
   font-size: 40px;
   width: 60px;
@@ -344,7 +359,7 @@ header nav ul li a:hover {
 .rcalc-button-operator {
   border-radius: 20px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #39681c;
   font-size: 40px;
   width: 60px;
@@ -357,7 +372,7 @@ header nav ul li a:hover {
 .rcalc-dropdown-button-color {
   font-family: "Times New Roman", Times, serif;
   background-color: #1c3968;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
   padding: 5px;
@@ -370,7 +385,7 @@ header nav ul li a:hover {
 .rcalc-dropdown-button-size {
   font-family: "Times New Roman", Times, serif;
   background-color: #1c3968;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
   padding: 5px;
@@ -383,7 +398,7 @@ header nav ul li a:hover {
 .rcalc-dropdown-button-language {
   font-family: "Times New Roman", Times, serif;
   background-color: #1c3968;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-weight: bold;
   padding: 5px;
@@ -484,21 +499,21 @@ header nav ul li a:hover {
 
 .rcalc-button-css-swap:hover {
   background-color: #1c3968;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* change color of dropdown size buttons on hover */
 
 .rcalc-button-size-swap:hover {
   background-color: #1c3968;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* change color of dropdown language buttons on hover */
 
 .rcalc-button-language-swap:hover {
   background-color: #1c3968;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* show the color dropdown menu on hover */

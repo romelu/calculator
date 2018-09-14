@@ -3,6 +3,24 @@
     "author": "Roman",
     "locale": "en"
   },
+  "nav.button.home": "Home",
+  "nav.button.calculator": "Calculator",
+  "nav.button.learn": "Learn counting",
+  "nav.button.contact": "Contact",
+
+  "nav-language-switcher-button": "Language",
+  "nav-language-switcher-english": "English",
+  "nav-language-switcher-czech": "Czech",
+
+  "index.title": "Home",
+  "index.h2": "Hi, I'm Roman Hvizdak",
+  "index.h3": "Presenting personal project, a simple calculator which teaches counting",
+
+  "learn.title": "Learn counting",
+
+  "contact.title": "Contact",
+  "contact.h2": "Contact me",
+
   "calculator.title": "Calculator",
   "calculator.h1": "Calculator by Roman",
 

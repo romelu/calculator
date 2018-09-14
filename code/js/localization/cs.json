@@ -3,6 +3,24 @@
     "author": "Roman",
     "locale": "cs"
   },
+  "nav.button.home": "Domů",
+  "nav.button.calculator": "Kalkulačka",
+  "nav.button.learn": "Učit se počítat",
+  "nav.button.contact": "Kontakt",
+
+  "nav-language-switcher-button": "Jazyk",
+  "nav-language-switcher-english": "Angličtina",
+  "nav-language-switcher-czech": "Čeština",
+
+  "index.title": "Domů",
+  "index.h2": "Ahoj, jmenuji se Roman Hvizdak",
+  "index.h3": "Představuji projekt, kalkulačku která učí počítat",
+
+  "learn.title": "Učit se počítat",
+
+  "contact.title": "Kontakt",
+  "contact.h2": "Kontaktuj mě",
+
   "calculator.title": "Kalkulačka",
   "calculator.h1": "Romanova Kalkulačka",
 

@@ -24,7 +24,7 @@ jQuery(function() {
       History.pushState(null, null, STRING_UTILITY_CONST.QUESTION_MARK + LOCALE + STRING_UTILITY_CONST.EQUALS_SIGN + $(this).data(LOCALE));
     });
 
-    $(STRING_UTILITY_CONST.DOT + "rcalc-language-swictcher-content").on('click', 'a', function(e) {
+    $(STRING_UTILITY_CONST.DOT + 'rcalc-language-swictcher-content').on('click', 'a', function(e) {
       e.preventDefault();
       History.pushState(null, null, STRING_UTILITY_CONST.QUESTION_MARK + LOCALE + STRING_UTILITY_CONST.EQUALS_SIGN + $(this).data(LOCALE));
     });
