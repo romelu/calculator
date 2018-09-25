@@ -7,5 +7,6 @@ const HTML_CLASS_CONST = {
   RCALC_DISPLAY_INFO: "rcalc-display-info",
   RCALC_LOG_DISPLAY: "rcalc-log-display",
   RCALC_LOG_DISPLAY_LINE: "rcalc-log-display-line",
-  RCALC_LANGUAGE_SWITCHER_CONTENT: "rcalc-language-swictcher-content"
+  RCALC_LANGUAGE_SWITCHER_CONTENT: "rcalc-language-swictcher-content",
+  RCALC_NAV_SANDWICH: "rcalc-nav-sandwich"
 }
