@@ -181,11 +181,26 @@ h3 {
   text-shadow: 2px 2px 5px #000000;
 }
 
+H4 {
+  width: auto;
+  display: inline;
+  border-top: 5px solid #484848;
+  padding-top: 5px;
+  line-height: 80px;
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* H attributes desktop */
 
 @media only screen and (min-width: 1000px) {
   h3 {
     width: 400px;
+  }
+  h4 {
+    font-size: 30px;
   }
 }
 
@@ -210,6 +225,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 25px;
 }
 
 .rcalc-banner-vertical-center {
@@ -230,16 +246,32 @@ h3 {
   display: table;
   width: 100%;
   height: auto;
-  background-color: #000000;
+  background-color: #484848;
 }
 
-.rcalc-index-square p {
+.rcalc-index-square div {
   display: table-cell;
   vertical-align: middle;
+}
+
+.rcalc-index-square div p {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
   line-height: 50px;
   color: #ffffff;
   font-size: 25px;
   text-align: center;
+}
+
+.rcalc-index-square div p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.rcalc-index-square div p a:hover {
+  color: #ffff00;
 }
 
 .rcalr-contact-mail {
@@ -252,6 +284,18 @@ h3 {
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
+}
+
+.rcalc-contact-h4-box {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.rcalc-contact-h4-box p {
+  line-height: 40px;
+  color: #000000;
+  font-size: 25px;
 }
 
 /* PAGE CONTENT desktop */
@@ -272,11 +316,11 @@ h3 {
   }
   .rcalc-index-certificate {
     height: 340px;
-    width: 60%;
+    width: calc(60% - 5px);
   }
   .rcalc-index-square {
     float: right;
-    width: 39%;
+    width: calc(40% - 5px);
     height: 340px;
   }
 }
@@ -313,14 +357,20 @@ h3 {
 
 .rcalc-button-log-clear {
   font-family: "Times New Roman", Times, serif;
-  background-color: #1c3968;
+  background-color: #000000;
   color: #ffffff;
   font-weight: bold;
-  margin-top: 25px;
+  text-transform: uppercase;
+  margin: 25px 0 10px 0;
   padding: 5px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
+}
+
+.rcalc-button-log-clear:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /*  box for entire view - needed to position the content */
@@ -375,7 +425,7 @@ h3 {
   border-radius: 20px;
   text-align: right;
   border-style: solid;
-  border-color: #1c3968;
+  border-color: #000000;
   color: #000000;
   background-color: #ffffff;
   font-size: 40px;
@@ -391,7 +441,7 @@ h3 {
   display: block;
   text-align: center;
   border-style: solid;
-  border-color: #1c3968;
+  border-color: #000000;
   border-width: 2px;
   font-weight: bold;
   color: #ff0000;
@@ -431,39 +481,38 @@ h3 {
 
 .rcalc-dropdown-button-color {
   font-family: "Times New Roman", Times, serif;
-  background-color: #1c3968;
+  background-color: #000000;
   color: #ffffff;
   cursor: pointer;
+  text-transform: uppercase;
   font-weight: bold;
   padding: 5px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
+}
+
+.rcalc-dropdown-button-color:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* dropdown button size */
 
 .rcalc-dropdown-button-size {
   font-family: "Times New Roman", Times, serif;
-  background-color: #1c3968;
+  background-color: #000000;
   color: #ffffff;
   cursor: pointer;
+  text-transform: uppercase;
   font-weight: bold;
   padding: 5px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
 }
 
-/* dropdown button language */
-
-.rcalc-dropdown-button-language {
-  font-family: "Times New Roman", Times, serif;
-  background-color: #1c3968;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 5px;
-  font-size: 20px;
-  border: none;
+.rcalc-dropdown-button-size:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* the container <div> - needed to position the color dropdown content */
@@ -476,13 +525,6 @@ h3 {
 /* the container <div> - needed to position the size dropdown content */
 
 .rcalc-dropdown-size {
-  margin: 25px 5px 0 5px;
-  display: inline-block;
-}
-
-/* the container <div> - needed to position the language dropdown content */
-
-.rcalc-dropdown-language {
   margin: 25px 5px 0 5px;
   display: inline-block;
 }
@@ -501,25 +543,19 @@ h3 {
   position: absolute;
 }
 
-/* dropdown language content (hidden by default) */
-
-.rcalc-dropdown-content-language {
-  display: none;
-  position: absolute;
-}
-
 /* buttons inside the color dropdown */
 
 .rcalc-button-css-swap {
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 13px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
+  text-transform: uppercase;
   border: none;
-  color: #000000;
+  color: #ffffff;
   padding: 5px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   display: block;
   cursor: pointer;
 }
@@ -528,29 +564,15 @@ h3 {
 
 .rcalc-button-size-swap {
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 13px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #000000;
+  text-transform: uppercase;
   border: none;
-  color: #000000;
+  color: #ffffff;
   padding: 5px;
-  text-decoration: none;
   font-weight: bold;
-  display: block;
-  cursor: pointer;
-}
-
-/* buttons inside the language dropdown */
-
-.rcalc-button-language-swap {
-  font-size: 16px;
-  width: 100%;
-  background-color: #ffffff;
-  border: none;
-  color: #000000;
-  padding: 5px;
   text-decoration: none;
-  font-weight: bold;
   display: block;
   cursor: pointer;
 }
@@ -558,22 +580,15 @@ h3 {
 /* change color of dropdown color buttons on hover */
 
 .rcalc-button-css-swap:hover {
-  background-color: #1c3968;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* change color of dropdown size buttons on hover */
 
 .rcalc-button-size-swap:hover {
-  background-color: #1c3968;
-  color: #ffffff;
-}
-
-/* change color of dropdown language buttons on hover */
-
-.rcalc-button-language-swap:hover {
-  background-color: #1c3968;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* show the color dropdown menu on hover */
@@ -585,12 +600,6 @@ h3 {
 /* show the size dropdown menu on hover */
 
 .rcalc-dropdown-size:hover .rcalc-dropdown-content-size {
-  display: block;
-}
-
-/* show the language dropdown menu on hover */
-
-.rcalc-dropdown-language:hover .rcalc-dropdown-content-language {
   display: block;
 }
 

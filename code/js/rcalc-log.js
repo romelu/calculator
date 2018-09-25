@@ -13,6 +13,7 @@ function setLogDisplayLine() {
   parentDiv.insertBefore(paragraph, parentDiv.firstChild);
   parentDiv.removeChild(parentDiv.firstChild.nextSibling);
   changeLineColor(paragraph);
+  leftSideOfEqualSignGlobal = resultGlobal;
 }
 
 function setDisplayLineErrorCase() {

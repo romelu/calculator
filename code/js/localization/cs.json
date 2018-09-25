@@ -5,7 +5,7 @@
   },
   "nav.button.home": "Domů",
   "nav.button.calculator": "Kalkulačka",
-  "nav.button.learn": "Učit se počítat",
+  "nav.button.practice": "Procvičování",
   "nav.button.contact": "Kontakt",
 
   "nav-language-switcher-button": "Jazyk",
@@ -14,18 +14,22 @@
 
   "index.title": "Domů",
   "index.h2": "Ahoj, jmenuji se Roman Hvizdak",
-  "index.h3": "Představuji projekt, kalkulačku která učí počítat",
+  "index.h3": "Představuji mé stránky, kde se nachází kalkulačka, stránka s generováním příkladů pro procvičování a možnost vytisknout sadu příkladů",
+  "index.square.p": "Více o tomto projektu na GitHub",
 
-  "learn.title": "Učit se počítat",
+  "practice.title": "Procvičování",
 
   "contact.title": "Kontakt",
   "contact.h2": "Kontaktuj mě",
+  "contact.h4": "Navštiv mé další stránky:",
+
+  "log.display.h1": "Log obrazovka",
+  "log.display.button.clear": "Vyčisti obrazovku",
+
+  "view.h1": "Tady bude náhled",
 
   "calculator.title": "Kalkulačka",
   "calculator.h1": "Romanova kalkulačka",
-  "log.display.h1": "Log obrazovka",
-  "log.display.button.clear": "Vyčisti obrazovku",
-  "view.h1": "Tady bude náhled",
 
   "calculator.dropdown.button.color": "Barva",
   "calculator.dropdown.content.default.theme": "Výchozí téma",
@@ -36,10 +40,6 @@
   "calculator.dropdown.content.small": "Malá",
   "calculator.dropdown.content.default": "Výchozí",
   "calculator.dropdown.content.large": "Velká",
-
-  "calculator.dropdown.button.language": "Jazyk",
-  "calculator.dropdown.content.english": "Angličtina",
-  "calculator.dropdown.content.czech": "Čeština",
 
   "calculator.message.error.division.by.zero": "Nulou nelze dělit!\nKlikněte C",
   "calculator.message.error.invalid.entry": "Neplatný vstup!\nKlikněte C",
