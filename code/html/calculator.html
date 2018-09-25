@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width , initial-scale=1">
-  <script src="../js/rcalc-loader.js"></script>
-  <link rel="stylesheet" id="id-page-style" type="text/css" href="../css/theme-default.css">
-  <title data-i18n="calculator.title">Calculator</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <script src="../js/rcalc-loader.js"></script>
+    <link rel="stylesheet" id="id-page-style" type="text/css" href="../css/theme-default.css">
+    <title data-i18n="calculator.title">Calculator</title>
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <a class="rcalc-nav-sandwich">
-        <img src="../image/sandwich.png" alt="chinese">
-      </a>
-      <div class="rcalc-nav-button-container">
-        <ul>
-          <li><a href="index.html" class="rcalc-nav-button" data-i18n="nav.button.home">Home</a></li>
-          <li><a href="calculator.html" class="rcalc-nav-button" data-i18n="nav.button.calculator">Calculator</a></li>
-          <li><a href="practice.html" class="rcalc-nav-button" data-i18n="nav.button.practice">Practice</a></li>
-          <li><a href="contact.html" class="rcalc-nav-button" data-i18n="nav.button.contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="rcalc-language-switcher">
-        <button class="rcalc-language-switcher-button" data-i18n="nav-language-switcher-button">Language</button>
-        <div class="rcalc-language-swictcher-content">
-          <a href="#" class="rcalc-language-switcher-swap" data-locale="en" data-i18n="nav-language-switcher-english">English</a>
-          <a href="#" class="rcalc-language-switcher-swap" data-locale="cs" data-i18n="nav-language-switcher-czech">Czech</a>
+  <body>
+    <header>
+      <nav>
+        <a class="rcalc-nav-sandwich">
+          <img src="../image/sandwich.png" alt="chinese">
+        </a>
+        <div class="rcalc-nav-button-container">
+          <ul>
+            <li><a href="index.html" class="rcalc-nav-button" data-i18n="nav.button.home">Home</a></li>
+            <li><a href="calculator.html" class="rcalc-nav-button" data-i18n="nav.button.calculator">Calculator</a></li>
+            <li><a href="practice.html" class="rcalc-nav-button" data-i18n="nav.button.practice">Practice</a></li>
+            <li><a href="contact.html" class="rcalc-nav-button" data-i18n="nav.button.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="rcalc-language-switcher">
+          <button class="rcalc-language-switcher-button" data-i18n="nav-language-switcher-button">Language</button>
+          <div class="rcalc-language-swictcher-content">
+            <a href="#" class="rcalc-language-switcher-swap" data-locale="en" data-i18n="nav-language-switcher-english">English</a>
+            <a href="#" class="rcalc-language-switcher-swap" data-locale="cs" data-i18n="nav-language-switcher-czech">Czech</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="rcalc-grid">
+      <div class="rcalc-container-log-display" id="id-container-log-display">
+        <h1 data-i18n="log.display.h1">Log display</h1>
+        <div class="rcalc-log-display" id="id-log-display"></div>
+        <div class="rcalc-container-button-log-clear">
+          <button class="rcalc-button-log-clear" data-i18n="log.display.button.clear" onclick="clearLog();">Clear log</button>
         </div>
       </div>
-    </nav>
-  </header>
-  <div class="rcalc-grid">
-    <div class="rcalc-container-log-display" id="id-container-log-display">
-      <h1 data-i18n="log.display.h1">Log display</h1>
-      <div class="rcalc-log-display" id="id-log-display"></div>
-      <div class="rcalc-container-button-log-clear">
-        <button class="rcalc-button-log-clear" data-i18n="log.display.button.clear" onclick="clearLog();">Clear log</button>
-      </div>
-    </div>
-    <div class="rcalc-container-calculator">
-      <h1 data-i18n="calculator.h1">Calculator by Roman</h1>
-      <form name="nameCalculator" class="rcalc-calculator">
-        <table>
-          <tr>
-            <td colspan="3"><input type="text" name="nameDisplayMain" class="rcalc-display-main" id="id-display-main" maxlength="1000" disabled></td>
-            <td><input type="button" name="nameButtonClear" class="rcalc-button-clear" value="C" onclick="clearDisplay();"></td>
-          </tr>
-          <tr>
-            <td><input type="button" name="nameSeven" class="rcalc-button" value="7" onclick="testZero(nameSeven.value);"></td>
-            <td><input type="button" name="nameEight" class="rcalc-button" value="8" onclick="testZero(nameEight.value);"></td>
-            <td><input type="button" name="nameNine" class="rcalc-button" value="9" onclick="testZero(nameNine.value);"></td>
-            <td><input type="button" name="nameDivision" class="rcalc-button-operator" value="/" onclick="setWarning(nameDivision.value);"></td>
-          </tr>
-          <tr>
-            <td><input type="button" name="nameFour" class="rcalc-button" value="4" onclick="testZero(nameFour.value);"></td>
-            <td><input type="button" name="nameFive" class="rcalc-button" value="5" onclick="testZero(nameFive.value);"></td>
-            <td><input type="button" name="nameSix" class="rcalc-button" value="6" onclick="testZero(nameSix.value);"></td>
-            <td><input type="button" name="nameMultiplication" class="rcalc-button-operator" value="*" onclick="displayNumber(nameMultiplication.value);"></td>
-          </tr>
-          <tr>
-            <td><input type="button" name="nameOne" class="rcalc-button" value="1" onclick="testZero(nameOne.value);"></td>
-            <td><input type="button" name="nameTwo" class="rcalc-button" value="2" onclick="testZero(nameTwo.value);"></td>
-            <td><input type="button" name="nameThree" class="rcalc-button" value="3" onclick="testZero(nameThree.value);"></td>
-            <td><input type="button" name="nameSubtraction" class="rcalc-button-operator" value="-" onclick="displayNumber(nameSubtraction.value);"></td>
-          </tr>
-          <tr>
-            <td><input type="button" name="nameDot" class="rcalc-button" value="." onclick="displayNumber(nameDot.value);"></td>
-            <td><input type="button" name="nameZero" class="rcalc-button" value="0" onclick="testZero(nameZero.value);"></td>
-            <td><input type="button" name="nameEqual" class="rcalc-button" value="=" onclick="evaluateDisplay();"></td>
-            <td><input type="button" name="nameAddition" class="rcalc-button-operator" value="+" onclick="displayNumber(nameAddition.value);"></td>
-          </tr>
-          <tr>
-            <td colspan="4"><textarea name="nameDisplayInfo" class="rcalc-display-info" id="id-display-info" rows="2" disabled></textarea></td>
-          </tr>
-        </table>
-      </form>
-      <br>
-      <div class="rcalc-dropdown-color">
-        <button class="rcalc-dropdown-button-color" data-i18n="calculator.dropdown.button.color">Color</button>
-        <div class="rcalc-dropdown-content-color">
-          <button type="button" class="rcalc-button-css-swap" data-i18n="calculator.dropdown.content.default.theme" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
-          <button type="button" class="rcalc-button-css-swap" data-i18n="calculator.dropdown.content.sky.theme" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
-          <button type="button" class="rcalc-button-css-swap" data-i18n="calculator.dropdown.content.sand.theme" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
+      <div class="rcalc-container-calculator">
+        <h1 data-i18n="calculator.h1">Calculator by Roman</h1>
+        <form name="nameCalculator" class="rcalc-calculator">
+          <table>
+            <tr>
+              <td colspan="3"><input type="text" name="nameDisplayMain" class="rcalc-display-main" id="id-display-main" maxlength="1000" disabled></td>
+              <td><input type="button" name="nameButtonClear" class="rcalc-button-clear" value="C" onclick="clearDisplay();"></td>
+            </tr>
+            <tr>
+              <td><input type="button" name="nameSeven" class="rcalc-button" value="7" onclick="testZero(nameSeven.value);"></td>
+              <td><input type="button" name="nameEight" class="rcalc-button" value="8" onclick="testZero(nameEight.value);"></td>
+              <td><input type="button" name="nameNine" class="rcalc-button" value="9" onclick="testZero(nameNine.value);"></td>
+              <td><input type="button" name="nameDivision" class="rcalc-button-operator" value="/" onclick="setWarning(nameDivision.value);"></td>
+            </tr>
+            <tr>
+              <td><input type="button" name="nameFour" class="rcalc-button" value="4" onclick="testZero(nameFour.value);"></td>
+              <td><input type="button" name="nameFive" class="rcalc-button" value="5" onclick="testZero(nameFive.value);"></td>
+              <td><input type="button" name="nameSix" class="rcalc-button" value="6" onclick="testZero(nameSix.value);"></td>
+              <td><input type="button" name="nameMultiplication" class="rcalc-button-operator" value="*" onclick="displayNumber(nameMultiplication.value);"></td>
+            </tr>
+            <tr>
+              <td><input type="button" name="nameOne" class="rcalc-button" value="1" onclick="testZero(nameOne.value);"></td>
+              <td><input type="button" name="nameTwo" class="rcalc-button" value="2" onclick="testZero(nameTwo.value);"></td>
+              <td><input type="button" name="nameThree" class="rcalc-button" value="3" onclick="testZero(nameThree.value);"></td>
+              <td><input type="button" name="nameSubtraction" class="rcalc-button-operator" value="-" onclick="displayNumber(nameSubtraction.value);"></td>
+            </tr>
+            <tr>
+              <td><input type="button" name="nameDot" class="rcalc-button" value="." onclick="displayNumber(nameDot.value);"></td>
+              <td><input type="button" name="nameZero" class="rcalc-button" value="0" onclick="testZero(nameZero.value);"></td>
+              <td><input type="button" name="nameEqual" class="rcalc-button" value="=" onclick="evaluateDisplay();"></td>
+              <td><input type="button" name="nameAddition" class="rcalc-button-operator" value="+" onclick="displayNumber(nameAddition.value);"></td>
+            </tr>
+            <tr>
+              <td colspan="4"><textarea name="nameDisplayInfo" class="rcalc-display-info" id="id-display-info" rows="2" disabled></textarea></td>
+            </tr>
+          </table>
+        </form>
+        <br>
+        <div class="rcalc-dropdown-color">
+          <button class="rcalc-dropdown-button-color" data-i18n="calculator.dropdown.button.color">Color</button>
+          <div class="rcalc-dropdown-content-color">
+            <button type="button" class="rcalc-button-css-swap" data-i18n="calculator.dropdown.content.default.theme" onclick="swapCssFile('../css/theme-default.css');">Default theme</button>
+            <button type="button" class="rcalc-button-css-swap" data-i18n="calculator.dropdown.content.sky.theme" onclick="swapCssFile('../css/theme-sky.css');">Sky theme</button>
+            <button type="button" class="rcalc-button-css-swap" data-i18n="calculator.dropdown.content.sand.theme" onclick="swapCssFile('../css/theme-sand.css');">Sand theme</button>
+          </div>
+        </div>
+        <div class="rcalc-dropdown-size">
+          <button class="rcalc-dropdown-button-size" data-i18n="calculator.dropdown.button.size">Size</button>
+          <div class="rcalc-dropdown-content-size">
+            <button type="button" class="rcalc-button-size-swap" data-i18n="calculator.dropdown.content.small" onclick="changeSizeSmall();">Small</button>
+            <button type="button" class="rcalc-button-size-swap" data-i18n="calculator.dropdown.content.default" onclick="changeSizeDefault();">Default</button>
+            <button type="button" class="rcalc-button-size-swap" data-i18n="calculator.dropdown.content.large" onclick="changeSizeLarge();">Large</button>
+          </div>
         </div>
       </div>
-      <div class="rcalc-dropdown-size">
-        <button class="rcalc-dropdown-button-size" data-i18n="calculator.dropdown.button.size">Size</button>
-        <div class="rcalc-dropdown-content-size">
-          <button type="button" class="rcalc-button-size-swap" data-i18n="calculator.dropdown.content.small" onclick="changeSizeSmall();">Small</button>
-          <button type="button" class="rcalc-button-size-swap" data-i18n="calculator.dropdown.content.default" onclick="changeSizeDefault();">Default</button>
-          <button type="button" class="rcalc-button-size-swap" data-i18n="calculator.dropdown.content.large" onclick="changeSizeLarge();">Large</button>
-        </div>
+      <div class="rcalc-container-view">
+        <h1 data-i18n="view.h1">Here will be a view</h1>
+        <textarea name="nameViewDisplay" class="rcalc-view-display" id="id-view-display" disabled></textarea>
       </div>
     </div>
-    <div class="rcalc-container-view">
-      <h1 data-i18n="view.h1">Here will be a view</h1>
-      <textarea name="nameViewDisplay" class="rcalc-view-display" id="id-view-display" disabled></textarea>
-    </div>
-  </div>
-</body>
+  </body>
 
 </html>
