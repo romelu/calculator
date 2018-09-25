@@ -13,23 +13,21 @@
   "nav-language-switcher-czech": "Čeština",
 
   "index.title": "Domů",
-  "index.h2": "Ahoj, jmenuji se Roman Hvizdak",
-  "index.h3": "Představuji mé stránky, kde se nachází kalkulačka, stránka s generováním příkladů pro procvičování a možnost vytisknout sadu příkladů",
-  "index.square.p": "Více o tomto projektu na GitHub",
+  "index.banner.main.headline": "Ahoj, jmenuji se Roman Hvizdak",
+  "index.banner.secondary.headline": "Představuji mé stránky, kde se nachází kalkulačka, stránka s generováním příkladů pro procvičování a možnost vytisknout sadu příkladů",
+  "index.square.github.paragraph": "Více o tomto projektu na GitHub",
 
   "practice.title": "Procvičování",
 
   "contact.title": "Kontakt",
-  "contact.h2": "Kontaktuj mě",
-  "contact.h4": "Navštiv mé další stránky:",
-
-  "log.display.h1": "Log obrazovka",
-  "log.display.button.clear": "Vyčisti obrazovku",
-
-  "view.h1": "Tady bude náhled",
+  "contact.banner.main.headline": "Kontaktuj mě",
+  "contact.link.headline": "Navštiv mé další stránky:",
 
   "calculator.title": "Kalkulačka",
-  "calculator.h1": "Romanova kalkulačka",
+  "calculator.headline": "Romanova kalkulačka",
+  "calculator.log.display.headline": "Log obrazovka",
+  "calculator.log.display.button.clear": "Vyčisti obrazovku",
+  "calculator.view.headline": "Tady bude náhled",
 
   "calculator.dropdown.button.color": "Barva",
   "calculator.dropdown.content.default.theme": "Výchozí téma",

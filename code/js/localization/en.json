@@ -13,23 +13,21 @@
   "nav-language-switcher-czech": "Czech",
 
   "index.title": "Home",
-  "index.h2": "Hi, I'm Roman Hvizdak",
-  "index.h3": "I present my site where the calculator is located, a page with generating examples for practice and the possibility to print a set of examples",
-  "index.square.p": "More about this project on GitHub",
+  "index.banner.main.headline": "Hi, I'm Roman Hvizdak",
+  "index.banner.secondary.headline": "I present my site where the calculator is located, a page with generating examples for practice and the possibility to print a set of examples",
+  "index.square.github.paragraph": "More about this project on GitHub",
 
   "practice.title": "Practice",
 
   "contact.title": "Contact",
-  "contact.h2": "Contact me",
-  "contact.h4": "Visit my other web sites:",
-
-  "log.display.h1": "Log display",
-  "log.display.button.clear": "Clear log",
-
-  "view.h1": "Here will be a view",
+  "contact.banner.main.headline": "Contact me",
+  "contact.link.headline": "Visit my other web sites:",
 
   "calculator.title": "Calculator",
-  "calculator.h1": "Calculator by Roman",
+  "calculator.headline": "Calculator by Roman",
+  "calculator.log.display.headline": "Log display",
+  "calculator.log.display.button.clear": "Clear log",
+  "calculator.view.headline": "Here will be a view",
 
   "calculator.dropdown.button.color": "Color",
   "calculator.dropdown.content.default.theme": "Default theme",
