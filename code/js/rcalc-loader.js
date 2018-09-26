@@ -38,6 +38,7 @@ loadScript("../js/constant/file-path-constant.js");
 loadScript("../js/constant/html-element-attribute-constant.js");
 
 // rcalc functionalities
+loadScript("../js/rcalc-sandwich.js")﻿;
 loadScript("../js/rcalc-log.js")﻿;
 loadScript("../js/rcalc-keypress.js")﻿;
 loadScript("../js/rcalc-localization.js")﻿;

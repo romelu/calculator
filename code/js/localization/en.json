@@ -3,11 +3,31 @@
     "author": "Roman",
     "locale": "en"
   },
+  "nav.button.home": "Home",
+  "nav.button.calculator": "Calculator",
+  "nav.button.practice": "Practice",
+  "nav.button.contact": "Contact",
+
+  "nav-language-switcher-button": "Language",
+  "nav-language-switcher-english": "English",
+  "nav-language-switcher-czech": "Czech",
+
+  "index.title": "Home",
+  "index.banner.main.headline": "Hi, I'm Roman Hvizdak",
+  "index.banner.secondary.headline": "I present my site where the calculator is located, a page with generating examples for practice and the possibility to print a set of examples",
+  "index.square.github.paragraph": "More about this project on GitHub",
+
+  "practice.title": "Practice",
+
+  "contact.title": "Contact",
+  "contact.banner.main.headline": "Contact me",
+  "contact.link.headline": "Visit my other web sites:",
+
   "calculator.title": "Calculator",
-  "calculator.h1": "Calculator by Roman",
-  "log.display.h1": "Log display",
-  "log.display.button.clear": "Clear log",
-  "view.h1": "Here will be a view",
+  "calculator.headline": "Calculator by Roman",
+  "calculator.log.display.headline": "Log display",
+  "calculator.log.display.button.clear": "Clear log",
+  "calculator.view.headline": "Here will be a view",
 
   "calculator.dropdown.button.color": "Color",
   "calculator.dropdown.content.default.theme": "Default theme",
@@ -18,10 +38,6 @@
   "calculator.dropdown.content.small": "Small",
   "calculator.dropdown.content.default": "Default",
   "calculator.dropdown.content.large": "Large",
-
-  "calculator.dropdown.button.language": "Language",
-  "calculator.dropdown.content.english": "English",
-  "calculator.dropdown.content.czech": "Czech",
 
   "calculator.message.error.division.by.zero": "Can not devide by 0!\nClick C",
   "calculator.message.error.invalid.entry": "Invalid entry!\nClick C",
