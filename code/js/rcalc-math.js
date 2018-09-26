@@ -1,31 +1,20 @@
-// utility
-const STRING_EMPTY = "";
-const NUMBER_NULL = "0";
-// buttons (operators and operands)
-const RCALC_BUTTON = "rcalc-button";
-const RCALC_BUTTON_OPERATOR = "rcalc-button-operator";
-// ids
-const ID_DISPLAY_MAIN = "id-display-main";
-const ID_DISPLAY_INFO = "id-display-info";
-// colors
-const COLOR_BLACK = "black";
-const COLOR_WHITE = "white";
-// messages
-const MESSAGE_ERROR_DIVISION_BY_ZERO = "Can not devide by 0! Click C";
-const MESSAGE_ERROR_INVALID_ENTRY = "   Invalid entry!    Click C";
-
 var isDivisionPerformed = false;
+var leftSideOfEqualSignGlobal = STRING_UTILITY_CONST.STRING_EMPTY;
+var resultGlobal;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
-  nameCalculator.nameDisplayMain.value = nameCalculator.nameDisplayMain.value + inputValue;
+  var leftSideOfEqualSign = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value + inputValue;
+  document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = leftSideOfEqualSign;
+  leftSideOfEqualSignGlobal = leftSideOfEqualSign;
 }
 
 // testing 0 input, when 0 comes after / buttons are disabled and message is given
 function testZero(inputValue) {
-  if (isDivisionPerformed && inputValue == NUMBER_NULL) {
+  if (isDivisionPerformed && inputValue == NUMBER_UTILITY_CONST.NUMBER_ZERO) {
     disableButtons();
-    document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_DIVISION_BY_ZERO;
+    document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_DIVISION_BY_ZERO);
+    setDisplayLineErrorCase();
   } else {
     isDivisionPerformed = false;
   }
@@ -41,33 +30,45 @@ function setWarning(inputValue) {
 // clears both displays, resets boolean, enables buttons
 function clearDisplay() {
   isDivisionPerformed = false;
-  document.getElementById(ID_DISPLAY_MAIN).value = STRING_EMPTY;
-  document.getElementById(ID_DISPLAY_INFO).value = STRING_EMPTY;
+  document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = STRING_UTILITY_CONST.STRING_EMPTY;
+  document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
   enableButtons();
+  clearVarLeftSideOfEqualSignGlobal();
 }
 
+// evaluates cotent of main display
 function evaluateDisplay() {
   var valueInserted = nameCalculator.nameDisplayMain.value;
+  setDisplayLineErrorCase();
   disableButtons();
-  document.getElementById(ID_DISPLAY_INFO).value = MESSAGE_ERROR_INVALID_ENTRY;
+  document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_INVALID_ENTRY);
   if (valueInserted) {
-    nameCalculator.nameDisplayMain.value = eval(valueInserted);
-    enableButtons();
-    document.getElementById(ID_DISPLAY_INFO).value = STRING_EMPTY;
-  }
-}﻿
+    var result = eval(valueInserted);
+    if (result === undefined) {
+      disableButtons();
+      document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_INVALID_ENTRY);
+    } else {
+      nameCalculator.nameDisplayMain.value = result;
+      resultGlobal = result;
+      setLogDisplayLine();
+      enableButtons();
+      document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = STRING_UTILITY_CONST.STRING_EMPTY;
+    }
+  }﻿
+}
 
 // disables buttons (operands and operators)
 function disableButtons() {
-  changeButtonsDisabled(RCALC_BUTTON, COLOR_BLACK, true);
-  changeButtonsDisabled(RCALC_BUTTON_OPERATOR, COLOR_BLACK, true);
+  changeButtonsDisabled(HTML_CLASS_CONST.RCALC_BUTTON, HTML_CSS_CONST.COLOR_BLACK, true);
+  changeButtonsDisabled(HTML_CLASS_CONST.RCALC_BUTTON_OPERATOR, HTML_CSS_CONST.COLOR_BLACK, true);
 }
 // enables buttons (operands and operators)
 function enableButtons() {
-  changeButtonsDisabled(RCALC_BUTTON, COLOR_WHITE, false);
-  changeButtonsDisabled(RCALC_BUTTON_OPERATOR, COLOR_WHITE, false);
+  changeButtonsDisabled(HTML_CLASS_CONST.RCALC_BUTTON, HTML_CSS_CONST.COLOR_WHITE, false);
+  changeButtonsDisabled(HTML_CLASS_CONST.RCALC_BUTTON_OPERATOR, HTML_CSS_CONST.COLOR_WHITE, false);
 }
 
+// loops trough buttons and makes an action
 function changeButtonsDisabled(buttonsCssClass, color, disable) {
   var buttonsForDisable = document.getElementsByClassName(buttonsCssClass);
   for (var i = 0; i < buttonsForDisable.length; i++) {

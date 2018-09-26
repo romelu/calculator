@@ -1,22 +1,391 @@
-body {
-  background-color: #3498DB;
+/* selects all elements, used to normalize default settings for better cross-browser styling */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+/* selects the body element, used to unification */
+
+body {
+  font-size: 0;
+  background-color: #ffffff;
+}
+
+/* HEADER mobile */
+
+header {
+  margin: 10px 0;
+  background-color: #000000;
+  width: 100%;
+  height: 50px;
+}
+
+header nav .rcalc-nav-sandwich {
+  display: inline-block;
+  float: left;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin: 9px;
+}
+
+.rcalc-nav-button-container {
+  margin-top: 60px;
+  position: absolute;
+  width: 100%;
+}
+
+header nav ul {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  margin: auto;
+  width: 100%;
+  height: 0;
+}
+
+header nav ul.open {
+  height: auto;
+}
+
+header nav ul li {
+  float: none;
+  list-style: none;
+  line-height: 50px;
+}
+
+header nav ul li a {
+  padding-left: 11px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+}
+
+header nav ul li a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.rcalc-language-switcher {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.rcalc-language-switcher-button {
+  padding: 0 7px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+
+.rcalc-language-switcher-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rcalc-language-swictcher-content {
+  min-width: 100%;
+  right: 0;
+  display: none;
+}
+
+.rcalc-language-switcher-swap {
   text-align: center;
-  color: #F0F8FF;
+  line-height: 33px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 7px;
+  color: #ffffff;
+  background-color: #000000;
+  display: block;
+}
+
+.rcalc-language-switcher:hover .rcalc-language-swictcher-content {
+  display: block;
+  position: absolute;
+}
+
+.rcalc-language-switcher-swap:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* HEADER desktop */
+
+@media only screen and (min-width: 1000px) {
+  header nav .rcalc-nav-sandwich {
+    display: none;
+  }
+  header nav ul {
+    display: table;
+    background-color: none;
+    width: auto;
+  }
+  header nav ul li {
+    display: block;
+    float: left;
+  }
+  header nav ul li a {
+    padding: 0 25px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .rcalc-nav-button-container {
+    position: static;
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/* H attributes mobile */
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  line-height: 60px;
+  font-size: 40px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+h3 {
+  width: auto;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+/* H attributes desktop */
+
+@media only screen and (min-width: 1000px) {
+  h3 {
+    width: 400px;
+  }
+}
+
+/* PAGE CONTENT mobile */
+
+.rcalc-index-banner {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: table;
+  background-image: url("../image/wisdom.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rcalc-contact-banner {
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: table;
+  background-image: url("../image/contact.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 25px;
+}
+
+.rcalc-banner-vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.rcalc-index-certificate-box {
+  display: block;
+}
+
+.rcalc-index-certificate {
+  width: 100%;
+  height: auto;
+}
+
+.rcalc-index-square {
+  display: table;
+  width: 100%;
+  height: auto;
+  background-color: #484848;
+}
+
+.rcalc-index-square div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.rcalc-index-square div p {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  line-height: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+
+.rcalc-index-square div p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.rcalc-index-square div p a:hover {
+  color: #ffff00;
+}
+
+.rcalr-contact-mail {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.rcalc-contact-link-box {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.rcalc-contact-link-box p {
+  line-height: 40px;
+  color: #000000;
+  font-size: 25px;
+}
+
+/* PAGE CONTENT desktop */
+
+@media only screen and (min-width: 1000px) {
+  .rcalc-main-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .rcalc-index-banner {
+    height: 450px !important;
+  }
+  .rcalc-contact-banner {
+    height: 450px !important;
+  }
+  .rcalc-index-certificate-box {
+    margin-top: 10px;
+  }
+  .rcalc-index-certificate {
+    height: 340px;
+    width: calc(60% - 5px);
+  }
+  .rcalc-index-square {
+    float: right;
+    width: calc(40% - 5px);
+    height: 340px;
+  }
+}
+
+/* grid layout mobile*/
+
+.rcalc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rcalc-log-display {
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  font-size: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin: auto;
+  background-color: #ffffff;
+  width: 262px;
+  height: 377px;
+}
+
+.rcalc-log-display-line {
+  overflow: auto;
+  margin: auto;
+  padding: 0;
+}
+
+.rcalc-container-button-log-clear {
+  text-align: center;
+}
+
+.rcalc-button-log-clear {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 25px 0 10px 0;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.rcalc-button-log-clear:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*  box for entire view - needed to position the content */
+
+.rcalc-container-view {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.rcalc-view-display {
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  resize: none;
+  background-color: #ffffff;
+  width: 262px;
+  height: 377px;
 }
 
 /* box for entire calculator - needed to position the content */
 
-.rcalc-container {
+.rcalc-container-calculator {
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 /* calculator form */
 
 .rcalc-calculator {
+  border-radius: 20px;
   background-color: #1c3968;
   display: inline-block;
   padding: 2px;
@@ -25,9 +394,10 @@ h1 {
 /* clear button */
 
 .rcalc-button-clear {
+  border-radius: 20px;
   background-color: #681c1c;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 40px;
   width: 60px;
   height: 60px;
@@ -37,11 +407,12 @@ h1 {
 /* result display */
 
 .rcalc-display-main {
+  border-radius: 20px;
   text-align: right;
   border-style: solid;
-  border-color: #555d75;
+  border-color: #1c3968;
   color: #000000;
-  background-color: #F0F8FF;
+  background-color: #ffffff;
   font-size: 40px;
   width: 186px;
   height: 55px;
@@ -50,24 +421,27 @@ h1 {
 /* error display */
 
 .rcalc-display-info {
+  border-radius: 20px;
+  resize: none;
   display: block;
   text-align: center;
   border-style: solid;
-  border-color: #555d75;
+  border-color: #1c3968;
   border-width: 2px;
   font-weight: bold;
-  color: #FF0000;
-  background-color: #F0F8FF;
+  color: #ff0000;
+  background-color: #ffffff;
   font-size: 17px;
   width: 250px;
   height: 55px;
 }
 
-/* all buttons of calculator accept C */
+/* all buttons of calculator accept C and operators */
 
 .rcalc-button {
+  border-radius: 20px;
   border: none;
-  color: #F0F8FF;
+  color: #f0f8ff;
   background-color: #555d75;
   font-size: 40px;
   width: 60px;
@@ -78,8 +452,9 @@ h1 {
 /* operator buttons*/
 
 .rcalc-button-operator {
+  border-radius: 20px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #39681c;
   font-size: 40px;
   width: 60px;
@@ -87,53 +462,137 @@ h1 {
   cursor: pointer;
 }
 
-/* dropdown button */
+/* dropdown button color */
 
-.rcalc-dropdown-button {
-  background-color: #1c3968;
-  color: #FFFFFF;
+.rcalc-dropdown-button-color {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
   font-weight: bold;
-  margin-top: 25px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
 }
 
-/* the container <div> - needed to position the dropdown content */
+.rcalc-dropdown-button-color:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 
-.rcalc-dropdown {
+/* dropdown button size */
+
+.rcalc-dropdown-button-size {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+}
+
+.rcalc-dropdown-button-size:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* the container <div> - needed to position the color dropdown content */
+
+.rcalc-dropdown-color {
+  margin: 25px 5px 0 5px;
   display: inline-block;
 }
 
-/* dropdown content (hidden by default) */
+/* the container <div> - needed to position the size dropdown content */
 
-.rcalc-dropdown-content {
-  display: none;
+.rcalc-dropdown-size {
+  margin: 25px 5px 0 5px;
+  display: inline-block;
 }
 
-/* buttons inside the dropdown */
+/* dropdown color content (hidden by default) */
+
+.rcalc-dropdown-content-color {
+  display: none;
+  position: absolute;
+}
+
+/* dropdown size content (hidden by default) */
+
+.rcalc-dropdown-content-size {
+  display: none;
+  position: absolute;
+}
+
+/* buttons inside the color dropdown */
 
 .rcalc-button-css-swap {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #000000;
+  text-transform: uppercase;
   border: none;
-  color: #000000;
+  color: #ffffff;
   padding: 5px;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
   display: block;
   cursor: pointer;
 }
 
-/* change color of dropdown buttons on hover */
+/* buttons inside the size dropdown */
 
-.rcalc-button-css-swap:hover {
-  background-color: #1c3968;
-  color: #FFFFFF;
+.rcalc-button-size-swap {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  width: 100%;
+  background-color: #000000;
+  text-transform: uppercase;
+  border: none;
+  color: #ffffff;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
 }
 
-/* show the dropdown menu on hover */
+/* change color of dropdown color buttons on hover */
 
-.rcalc-dropdown:hover .rcalc-dropdown-content {
+.rcalc-button-css-swap:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* change color of dropdown size buttons on hover */
+
+.rcalc-button-size-swap:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* show the color dropdown menu on hover */
+
+.rcalc-dropdown-color:hover .rcalc-dropdown-content-color {
   display: block;
+}
+
+/* show the size dropdown menu on hover */
+
+.rcalc-dropdown-size:hover .rcalc-dropdown-content-size {
+  display: block;
+}
+
+/* grid layout desktop*/
+
+@media only screen and (min-width: 1000px) {
+  .rcalc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
