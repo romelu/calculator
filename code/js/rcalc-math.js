@@ -14,6 +14,8 @@ function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == NUMBER_UTILITY_CONST.NUMBER_ZERO) {
     disableButtons();
     document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_DIVISION_BY_ZERO);
+    // updating value of main display, needed for setDisplayLineErrorCase as it takes its value and 0 has not been displayed yet
+    leftSideOfEqualSignGlobal = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value + inputValue;
     setDisplayLineErrorCase();
   } else {
     isDivisionPerformed = false;
