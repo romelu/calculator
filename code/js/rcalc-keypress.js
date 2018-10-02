@@ -13,8 +13,6 @@ document.addEventListener("keyup", function(event) {
   nextToLastCharacter = collectionOfKeys[collectionOfKeys.length - 2];
   switch (key) {
     case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_0:
-      testZero(key);
-      break;
     case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_1:
     case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_2:
     case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_3:
@@ -25,7 +23,7 @@ document.addEventListener("keyup", function(event) {
     case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_8:
     case STRING_KEY_KEYPRESS_CONST.KEY_NUMBER_9:
     case STRING_KEY_KEYPRESS_CONST.KEY_DOT:
-      displayNumber(key);
+      testZero(key);
       break;
     case STRING_KEY_KEYPRESS_CONST.KEY_L:
     case STRING_KEY_KEYPRESS_CONST.KEY_U:
@@ -41,12 +39,6 @@ document.addEventListener("keyup", function(event) {
   }
 });
 
-function removeExtraCharacter() {
-  var displayValue = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value;
-  displayValue = displayValue.slice(0, -1);
-  document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = displayValue;
-}
-
 function testCharacter(key) {
   if (nextToLastCharacter == "p" && key == "l") {
     displayNumber("+");
@@ -58,8 +50,6 @@ function testCharacter(key) {
     displayNumber("*");
   }
   if (nextToLastCharacter == "d" && key == "i") {
-    displayNumber("/");
-    setWarning(key);
-    removeExtraCharacter();
+    setWarning("/");
   }
 }
