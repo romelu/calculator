@@ -4,6 +4,18 @@ var resultGlobal;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
+  if (inputValue) {
+    var buttonsToBeEnabled = document.getElementsByClassName(HTML_CLASS_CONST.RCALC_BUTTON_OPERATOR);
+    for (var i = 0; i < buttonsToBeEnabled.length; i++) {
+      buttonsToBeEnabled[i].disabled = false;
+    }
+  }
+  if (inputValue == STRING_UTILITY_CONST.PLUS_SIGN || inputValue == STRING_UTILITY_CONST.MINUS_SIGN || inputValue == STRING_UTILITY_CONST.MULTIPLICATION_SIGN || inputValue == STRING_UTILITY_CONST.DIVISION_SIGN) {
+    var buttonsToBeDisabled = document.getElementsByClassName(HTML_CLASS_CONST.RCALC_BUTTON_OPERATOR);
+    for (var i = 0; i < buttonsToBeDisabled.length; i++) {
+      buttonsToBeDisabled[i].disabled = true;
+    }
+  }
   var leftSideOfEqualSign = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value + inputValue;
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = leftSideOfEqualSign;
   leftSideOfEqualSignGlobal = leftSideOfEqualSign;
