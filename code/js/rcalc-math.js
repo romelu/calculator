@@ -4,6 +4,18 @@ var resultGlobal;
 
 // displays numerous inputs (numbers) on the screen
 function displayNumber(inputValue) {
+  if (inputValue) {
+    var buttonsToBeEnabled = document.getElementsByClassName(HTML_CLASS_CONST.RCALC_BUTTON_OPERATOR);
+    for (var i = 0; i < buttonsToBeEnabled.length; i++) {
+      buttonsToBeEnabled[i].disabled = false;
+    }
+  }
+  if (inputValue == STRING_UTILITY_CONST.PLUS_SIGN || inputValue == STRING_UTILITY_CONST.MINUS_SIGN || inputValue == STRING_UTILITY_CONST.MULTIPLICATION_SIGN || inputValue == STRING_UTILITY_CONST.DIVISION_SIGN) {
+    var buttonsToBeDisabled = document.getElementsByClassName(HTML_CLASS_CONST.RCALC_BUTTON_OPERATOR);
+    for (var i = 0; i < buttonsToBeDisabled.length; i++) {
+      buttonsToBeDisabled[i].disabled = true;
+    }
+  }
   var leftSideOfEqualSign = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value + inputValue;
   document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value = leftSideOfEqualSign;
   leftSideOfEqualSignGlobal = leftSideOfEqualSign;
@@ -14,6 +26,8 @@ function testZero(inputValue) {
   if (isDivisionPerformed && inputValue == NUMBER_UTILITY_CONST.NUMBER_ZERO) {
     disableButtons();
     document.getElementById(HTML_ID_CONST.ID_DISPLAY_INFO).value = $.i18n(STRING_KEY_LOCALIZATION_CONST.MESSAGE_ERROR_DIVISION_BY_ZERO);
+    // updating value of main display, needed for setDisplayLineErrorCase as it takes its value and 0 has not been displayed yet
+    leftSideOfEqualSignGlobal = document.getElementById(HTML_ID_CONST.ID_DISPLAY_MAIN).value + inputValue;
     setDisplayLineErrorCase();
   } else {
     isDivisionPerformed = false;
