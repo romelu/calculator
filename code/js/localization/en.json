@@ -18,6 +18,18 @@
   "index.square.github.paragraph": "More about this project on GitHub",
 
   "practice.title": "Practice",
+  "practice.main.headline": "Numerical examples",
+  "practice.secondary.headline.difficulty": "Set difficulty",
+  "practice.secondary.headline.operator": "Used operators",
+  "practice.secondary.headline.value": "Absolute value",
+  "practice.difficulty.own": "Own",
+  "practice.difficulty.easy": "Easy",
+  "practice.difficulty.medium": "Medium",
+  "practice.difficulty.hard": "Hard",
+  "practice.button.generate": "Generate",
+  "practice.button.check": "Check",
+  "practice.button.new": "New test",
+  "practice.button.repeat": "Repeat the same test",
 
   "contact.title": "Contact",
   "contact.banner.main.headline": "Contact me",
