@@ -48,6 +48,7 @@ header nav ul {
 
 header nav ul.open {
   height: auto;
+  z-index: 10;
 }
 
 header nav ul li {
@@ -71,6 +72,7 @@ header nav ul li a:hover {
 }
 
 .rcalc-language-switcher {
+  z-index: 11;
   position: absolute;
   top: 10px;
   right: 0;
@@ -153,7 +155,7 @@ header nav ul li a:hover {
 
 h1 {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -181,7 +183,7 @@ h3 {
   text-shadow: 2px 2px 5px #000000;
 }
 
-H4 {
+h4 {
   width: auto;
   display: inline;
   border-top: 5px solid #484848;
@@ -193,9 +195,20 @@ H4 {
   font-weight: bold;
 }
 
+h5 {
+  float: left;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+
 /* H attributes desktop */
 
 @media only screen and (min-width: 1000px) {
+  h1 {
+    font-size: 30px;
+  }
   h3 {
     width: 400px;
   }
@@ -272,6 +285,205 @@ H4 {
 
 .rcalc-index-square div p a:hover {
   color: #ffff00;
+}
+
+/* PRACTICE mobile */
+
+.rcalc-practice table {
+  width: 100%;
+}
+
+.rcalc-practice table tr td {
+  text-align: center;
+  width: 25%;
+}
+
+.rcalc-practice table tr td label {
+ text-transform: uppercase;
+ display: inline-block;
+ font-size: 15px;
+}
+
+.rcalc-practice-generate-table {
+  width: 100%;
+}
+
+.rcalc-practice-button-generate {
+  float: right;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.rcalc-practice-button-generate:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rcalc-practice-button-check-box {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.rcalc-practice-generate-box form table tr td {
+  width: 25%;
+  text-align: center;
+}
+
+.rcalc-practice-generate-box form table tr td input {
+  margin: 5px 0 5px 0;
+  width: 50%;
+}
+
+.rcalc-practice-button-check {
+  float:right;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.rcalc-practice-button-check:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rcalc-practice-button-new-test {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.rcalc-practice-button-new-test:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rcalc-practice-button-same-test {
+  float: right;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.rcalc-practice-button-same-test:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Customize the label (the container) */
+.container {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* PRACTICE desktop */
+
+@media only screen and (min-width: 1000px) {
+  .rcalc-practice table tr td label {
+    font-size: 20px;
+  }
+  .container {
+    padding-left: 35px;
+  }
+  .checkmark {
+    height: 20px;
+    width: 20px;
+  }
+  .container .checkmark:after {
+    left: 6px;
+    top: 2px;
+  }
+  .rcalc-practice-generate-box form table tr td input {
+    width: 30%;
+  }
 }
 
 .rcalr-contact-mail {

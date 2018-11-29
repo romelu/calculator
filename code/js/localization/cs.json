@@ -18,6 +18,18 @@
   "index.square.github.paragraph": "Více o tomto projektu na GitHub",
 
   "practice.title": "Procvičování",
+  "practice.main.headline": "Číselné příklady",
+  "practice.secondary.headline.difficulty": "Nastavte obtížnost",
+  "practice.secondary.headline.operator": "Použité operátory",
+  "practice.secondary.headline.value": "Absolutní hodnota",
+  "practice.difficulty.own": "Vlastní",
+  "practice.difficulty.easy": "Lehká",
+  "practice.difficulty.medium": "Střední",
+  "practice.difficulty.hard": "Těžká",
+  "practice.button.generate": "Vygenerovat",
+  "practice.button.check": "Zkontroluj",
+  "practice.button.new": "Nový test",
+  "practice.button.repeat": "Zopakuj stejný test",
 
   "contact.title": "Kontakt",
   "contact.banner.main.headline": "Kontaktuj mě",
